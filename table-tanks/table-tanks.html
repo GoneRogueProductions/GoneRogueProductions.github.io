@@ -1,0 +1,457 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#eeeeee" />
+    <meta property="og:image" content="https://img.itch.zone/aW1hZ2UvMjM4NjUxLzExMzYzMjAucG5n/original/fxu%2BN6.png" />
+    <link href="https://img.itch.zone/aW1hZ2UvMjM4NjUxLzExMzYzMjAucG5n/32x32%23/amqxPt.png" type="image/png" rel="icon" />
+    <meta content="itch.io" property="og:site_name" />
+    <meta content="4503599627724030" property="twitter:account_id" />
+    <meta property="og:description" content="Tiny top-down tank action!" />
+    <meta name="description" content="Tiny top-down tank action!" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="itch:path" content="games/238651" />
+    <meta content="@itchio" name="twitter:site" />
+    <meta name="twitter:title" content="Table Tanks by rologfos" />
+    <meta name="twitter:description" content="Tiny top-down tank action! Play in your browser" />
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta property="twitter:image" content="https://img.itch.zone/aW1hZ2UvMjM4NjUxLzExMzYzMjAucG5n/508x254%23mb/13Lxy5.png" />
+    <meta property="twitter:creator" content="@rologfos" />
+    <meta name="twitter:url" content="https://rologfos.itch.io/table-tanks" />
+    <script type="application/ld+json">
+        {
+            "@type": "BreadcrumbList",
+            "@context": "http:\/\/schema.org",
+            "itemListElement": [{
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                    "@id": "https:\/\/itch.io\/games",
+                    "name": "Games"
+                }
+            }, {
+                "@type": "ListItem",
+                "position": 2,
+                "item": {
+                    "@id": "https:\/\/itch.io\/games\/genre-action",
+                    "name": "Action"
+                }
+            }, {
+                "@type": "ListItem",
+                "position": 3,
+                "item": {
+                    "@id": "https:\/\/itch.io\/games\/free",
+                    "name": "Free"
+                }
+            }]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "http:\/\/schema.org\/",
+            "name": "Table Tanks",
+            "@type": "Product",
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.7",
+                "ratingCount": 26
+            },
+            "description": "Tiny top-down tank action!"
+        }
+    </script>
+    <meta name="csrf_token" value="WyJKdFhaIiwxNjY5NjUzODQ1LCJuWlA0NUVKZXF4Q1RUdUwiXQ==.LKaR3TQBsLHxczfJYQg3wfhn4xc=" />
+    <link href="./static/game.css?1669337475" rel="stylesheet" />
+    <script type="text/javascript">
+        window.itchio_translations_url = 'https://static.itch.io/translations';
+    </script>
+    <script src="./static/lib.js?1669337474" type="text/javascript"></script>
+    <script src="./static/bundle.min.js?1669337474" type="text/javascript"></script>
+    <script src="https://static.itch.io/lib/jquery.maskMoney.js" type="text/javascript"></script>
+    <script data-src="./static/react.min.js?1669337474" id="lib_react_src"></script>
+    <script src="./static/game.min.js?1669337474" type="text/javascript"></script>
+    <script type="text/javascript">
+        I.current_user = null;
+        I.subdomain = true;
+    </script>
+    <script type="text/javascript">
+        if (!window.location.hostname.match(/localhost/)) {
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function() {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+            ga("create", {
+                "cookieDomain": "auto",
+                "trackingId": "UA-136625-6"
+            })
+            ga("set", 'anonymizeIp', true);
+            ga("send", "pageview");
+            ga("require", "ecommerce");
+        }
+    </script>
+    <style type="text/css" id="game_theme">
+        :root {
+            --itchio_ui_bg: #585858;
+            --itchio_ui_bg_dark: #525252
+        }
+
+        .wrapper {
+            --itchio_font_family: Lato;
+            --itchio_bg_color: #eeeeee;
+            --itchio_bg2_color: rgba(255, 255, 255, 1);
+            --itchio_bg2_sub: #e5e5e5;
+            --itchio_text_color: #222222;
+            --itchio_link_color: #fa5c5c;
+            --itchio_border_color: #d8d8d8;
+            --itchio_button_color: #fa5c5c;
+            --itchio_button_fg_color: #ffffff;
+            --itchio_button_shadow_color: #e54747;
+            background-color: #eeeeee;
+            /*! */
+            /* */
+        }
+
+        .inner_column {
+            color: #222222;
+            font-family: Lato, Lato, LatoExtended, sans-serif;
+            background-color: rgba(255, 255, 255, 1)
+        }
+
+        .inner_column ::selection {
+            color: #ffffff;
+            background: #fa5c5c
+        }
+
+        .inner_column ::-moz-selection {
+            color: #ffffff;
+            background: #fa5c5c
+        }
+
+        .inner_column h1,
+        .inner_column h2,
+        .inner_column h3,
+        .inner_column h4,
+        .inner_column h5,
+        .inner_column h6 {
+            font-family: inherit;
+            font-weight: 900;
+            color: inherit
+        }
+
+        .inner_column a,
+        .inner_column .footer a {
+            color: #fa5c5c
+        }
+
+        .inner_column .button,
+        .inner_column .button:hover,
+        .inner_column .button:active {
+            background-color: #fa5c5c;
+            color: #ffffff;
+            text-shadow: 0 1px 0px #e54747
+        }
+        
+        canvas {
+    top:0!important;
+    left:0!important;
+    width:100%!important;
+    height:100%!important;
+}
+
+#canvas {
+    top:0!important;
+    left:0!important;
+    width:100%!important;
+    height:100%!important;
+}
+
+        .inner_column hr {
+            background-color: #d8d8d8
+        }
+
+        .inner_column table {
+            border-color: #d8d8d8
+        }
+
+        .inner_column .redactor-box .redactor-toolbar li a {
+            color: #fa5c5c
+        }
+
+        .inner_column .redactor-box .redactor-toolbar li a:hover,
+        .inner_column .redactor-box .redactor-toolbar li a:active,
+        .inner_column .redactor-box .redactor-toolbar li a.redactor-act {
+            background-color: #fa5c5c !important;
+            color: #ffffff !important;
+            text-shadow: 0 1px 0px #e54747 !important
+        }
+
+        .inner_column .redactor-box .redactor-toolbar .re-button-tooltip {
+            text-shadow: none
+        }
+
+        .game_frame {
+            background: #e5e5e5;
+            /*! */
+            /* */
+        }
+
+        .game_frame .embed_info {
+            background-color: rgba(255, 255, 255, 0.85)
+        }
+
+        .game_loading .loader_bar .loader_bar_slider {
+            background-color: #fa5c5c
+        }
+
+        .view_game_page .reward_row,
+        .view_game_page .bundle_row {
+            border-color: #e5e5e5 !important
+        }
+
+        .view_game_page .game_info_panel_widget {
+            background: rgba(229, 229, 229, 1)
+        }
+
+        .view_game_page .star_value .star_fill {
+            color: #fa5c5c
+        }
+
+        .view_game_page .rewards .quantity_input {
+            background: rgba(255, 255, 255, 1);
+            border-color: rgba(34, 34, 34, 0.5);
+            color: #222222
+        }
+
+        .view_game_page .right_col {
+            display: none
+        }
+
+        .game_devlog_page li .meta_row .post_likes {
+            border-color: #e5e5e5
+        }
+
+        .game_devlog_post_page .post_like_button {
+            box-shadow: inset 0 0 0 1px #d8d8d8
+        }
+
+        .game_comments_widget .community_post .post_footer a,
+        .game_comments_widget .community_post .post_footer .vote_btn,
+        .game_comments_widget .community_post .post_header .post_date a,
+        .game_comments_widget .community_post .post_header .edit_message {
+            color: rgba(34, 34, 34, 0.5)
+        }
+
+        .game_comments_widget .community_post .reveal_full_post_btn {
+            background: linear-gradient(to bottom, transparent, #ffffff 50%, #ffffff);
+            color: #fa5c5c
+        }
+
+        .game_comments_widget .community_post .post_votes {
+            border-color: rgba(34, 34, 34, 0.2)
+        }
+
+        .game_comments_widget .community_post .post_votes .vote_btn:hover {
+            background: rgba(34, 34, 34, 0.05)
+        }
+
+        .game_comments_widget .community_post .post_footer .vote_btn {
+            border-color: rgba(34, 34, 34, 0.5)
+        }
+
+        .game_comments_widget .community_post .post_footer .vote_btn span {
+            color: inherit
+        }
+
+        .game_comments_widget .community_post .post_footer .vote_btn:hover,
+        .game_comments_widget .community_post .post_footer .vote_btn.voted {
+            background-color: #fa5c5c;
+            color: #ffffff;
+            text-shadow: 0 1px 0px #e54747;
+            border-color: #fa5c5c
+        }
+
+        .game_comments_widget .form .redactor-box,
+        .game_comments_widget .form .click_input,
+        .game_comments_widget .form .forms_markdown_input_widget {
+            border-color: rgba(34, 34, 34, 0.5);
+            background: transparent
+        }
+
+        .game_comments_widget .form .redactor-layer,
+        .game_comments_widget .form .redactor-toolbar,
+        .game_comments_widget .form .click_input,
+        .game_comments_widget .form .forms_markdown_input_widget {
+            background: rgba(255, 255, 255, 1)
+        }
+
+        .game_comments_widget .form .forms_markdown_input_widget .markdown_toolbar button {
+            color: inherit;
+            opacity: 0.6
+        }
+
+        .game_comments_widget .form .forms_markdown_input_widget .markdown_toolbar button:hover,
+        .game_comments_widget .form .forms_markdown_input_widget .markdown_toolbar button:active {
+            opacity: 1;
+            background-color: #fa5c5c !important;
+            color: #ffffff !important;
+            text-shadow: 0 1px 0px #e54747 !important
+        }
+
+        .game_comments_widget .form .forms_markdown_input_widget .markdown_toolbar,
+        .game_comments_widget .form .forms_markdown_input_widget li {
+            border-color: rgba(34, 34, 34, 0.5)
+        }
+
+        .game_comments_widget .form textarea {
+            border-color: rgba(34, 34, 34, 0.5);
+            background: rgba(255, 255, 255, 1);
+            color: inherit
+        }
+
+        .game_comments_widget .form .redactor-toolbar {
+            border-color: rgba(34, 34, 34, 0.5)
+        }
+
+        .game_comments_widget .hint {
+            color: rgba(34, 34, 34, 0.5)
+        }
+
+        .game_community_preview_widget .community_topic_row .topic_tag {
+            background-color: #e5e5e5
+        }
+
+        .footer .svgicon,
+        .view_game_page .more_information_toggle .svgicon {
+            fill: #222222 !important
+        }
+    </style>
+    <title>GRPR: Table Tanks</title>
+</head>
+
+<body class="locale_en game_layout embedded_game responsive no_theme_toggle" data-host="itch.io" data-page_name="view_game">
+    <script type="text/javascript">
+        new I.GameUserTools('#user_tools')
+    </script>
+    <div id="wrapper" class="main wrapper">
+        <div class="inner_column size_large family_lato" id="inner_column">
+            <div id="view_html_game_page_78945" class="view_html_game_page view_game_page page_widget buy_on_top ready">
+                <div id="html_embed_widget_10272" style="z-index:4980365094813560438175601347856178304564830275640387256; position: absolute; top: 0; left: 0; width: 100%; height: 100%;" class="html_embed_widget embed_wrapper">
+                    <div data-height="540" data-width="960" style="width: 960px; height: 540px" class="game_frame game_pending">
+                        <div data-iframe="&lt;iframe allowtransparency=&quot;true&quot; webkitallowfullscreen=&quot;true&quot; mozallowfullscreen=&quot;true&quot; msallowfullscreen=&quot;true&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;true&quot; allow=&quot;autoplay; fullscreen *; geolocation; microphone; camera; midi; monetization; xr-spatial-tracking; gamepad; gyroscope; accelerometer; xr; cross-origin-isolated&quot; scrolling=&quot;no&quot; src=&quot;https://v6p9d9t4.ssl.hwcdn.net/html/2417742/index.html&quot; id=&quot;game_drop&quot;&gt;&lt;/iframe&gt;"
+                            class="iframe_placeholder"><button class="button load_iframe_btn"><svg stroke-width="2" stroke-linecap="round" class="svgicon icon_play" width="24" height="24" version="1.1" fill="none" role="img" stroke-linejoin="round" viewBox="0 0 24 24" stroke="currentColor" aria-hidden><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg> Run game</button></div>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    new I.HtmlEmbed('#html_embed_widget_10272', {
+                        "width": window.innerHeight,
+                        "height": window.innerWidth,
+                        "start_maximized": true
+                    })
+                </script>
+                
+
+                <div class="columns">
+                    <div class="left_col column">
+                        <div class="formatted_description user_formatted">
+                            <h2>Press play for the g&#1072;me to become full-screen</h2>
+                            <h3 class="text-center">Table Tanks is a action strategy game of wits and reflexes.</h3>
+                            <p class="text-center">Be a tank, shoot other thanks! But beware, ammo is scarce so&nbsp;use it wisely!&nbsp;Battle through 25 boards of increasing difficulty, while outfitting your tank with cool upgrades!</p>
+                            
+                            <h3>List of upgrades</h3>
+                            <ul>
+                                <ul>
+                                    <li><strong>Double Tap:</strong>&nbsp;
+                                        <ul>
+                                            <li>Fire an extra bullet at no cost!</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Increased Tank Agility:</strong>
+                                        <ul>
+                                            <li>+50% Top Speed &amp; 17% Turn Speed.</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>+2 Max Ammo:&nbsp;</strong>
+                                        <ul>
+                                            <li>Grants +2 Maximum Ammo capacity.</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Big Bullets:</strong>
+                                        <ul>
+                                            <li>Your bullets becomes huge and destroy enemy bullets!</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Shield Generator:</strong>
+                                        <ul>
+                                            <li>Your tank ignores the first bullet that hits it each level.</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Bouncy Bullets:</strong>
+                                        <ul>
+                                            <li>Your bullets will bounce off of walls twice before being destroyed.</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Laser Sight:</strong>
+                                        <ul>
+                                            <li>Shows where you are&nbsp;aiming and increases bullet speed by 60%!</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Ram Dashing:</strong>
+                                        <ul>
+                                            <li>Dashing is 20% faster and&nbsp;damages enemy tanks!</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </ul>
+                        </div>
+                        
+    <script type="text/javascript">
+        new I.CommunityViewTopic('#community_topic_posts_widget_90702', {
+            "report_url": "https:\/\/itch.io\/post\/:post_id\/report"
+        })
+    </script>
+    </div>
+    </div>
+    </div>
+    </div>
+    <script type="text/javascript">
+        new I.ViewHtmlGame('#view_html_game_page_78945', {
+            "min_price": 0,
+            "type": 5,
+            "hit_url": "https:\/\/rologfos.itch.io\/table-tanks\/rh\/eyJyIjoiaHR0cHM6XC9cL3d3dy5nb29nbGUuY29tXC8iLCJpZCI6MjM4NjUxLCJlIjoxNjY5NjU0MDkzfQ%3d%3d%2e%2b3raGM68OtBJqoyOT2jS5pqSBIw%3d",
+            "play_url": "https:\/\/rologfos.itch.io\/table-tanks\/rp\/eyJtIjoxNjY5NjU0MTY4LCJlIjoxNjY5NjU0MjI4LCJybiI6ODgyNzEsImlkIjoyMzg2NTF9%2eCljLXNhXRn7FMKnuYApgbHNj8gc%3d",
+            "play_after": 90,
+            "type_name": "html",
+            "actual_price": 0,
+            "slug": "table-tanks",
+            "id": 238651
+        }, {});
+    </script>
+    </div>
+    </div>
+    <script type="text/javascript">
+        I.setup_layout()
+    </script>
+    <script type="text/template" id="loading_lightbox_tpl">
+        <div aria-live="polite" class="lightbox loading_lightbox">
+            <div class="loader_outer">
+                <div class="loader_label">Loading</div>
+                <div class="loader_bar">
+                    <div class="loader_bar_slider"></div>
+                </div>
+            </div>
+        </div>
+    </script>
+    <script type="text/javascript">
+        I.setup_page();
+    </script>
+</body>
+
+</html>
