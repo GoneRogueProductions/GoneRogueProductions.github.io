@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4739296020319725"
+     crossorigin="anonymous"></script>
+     <title>GRPR: Learn to Fly</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="apple-mobile-web-app-title" content="GoneRogue">
+        <meta name="application-name" content="GoneRogue">
+        <meta name="msapplication-TileColor" content="#ffc40d">
+        <meta name="theme-color" content="#ffffff">
+        <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            body {
+                margin: 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id='ruffle' style="height: 100%; width: 100%;"></div>
+        <script>
+var h = window.innerHeight;
+var w = (h/3) * 4;
+
+
+var swfobject = {};
+
+swfobject.embedSWF = function(url, cont, width, height){
+    var ruffle = window.RufflePlayer.newest(),
+        player = Object.assign(document.getElementById(cont).appendChild(ruffle.createPlayer()), {
+            width: width,
+            height: height,
+            style: 'width: ' + width + 'px; height: ' + height + 'px',
+        });
+    
+    player.load({ url: url });
+}
+
+swfobject.embedSWF('/learn-to-fly.swf', 'ruffle', w, h);
+        </script>
+    </body>
+</html>

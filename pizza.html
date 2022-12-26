@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="apple-mobile-web-app-title" content="GoneRogue">
+        <meta name="application-name" content="GoneRogue">
+        <meta name="msapplication-TileColor" content="#ffc40d">
+        <meta name="theme-color" content="#ffffff">
+        <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            body {
+                margin: 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id='container' style="height: 100%; width: 100%;"></div>
+        <script>
+        var h = window.innerHeight;
+        var w = (h/3) * 4;
+        window.RufflePlayer = window.RufflePlayer || {};
+        window.addEventListener("load", (event) => {
+            const ruffle = window.RufflePlayer.newest();
+            const player = ruffle.createPlayer();
+            const container = document.getElementById("container"); 
+            container.appendChild(player);
+            player.load({
+                url: "pizza.swf", 
+                backgroundColor: "#000", 
+             });
+            player.style.width = w; 
+            player.style.height = h;
+        });
+    </script>
+    </body>
+</html>

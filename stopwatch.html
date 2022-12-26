@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GRPR: Stopwatch</title>
+        <meta name="description" content="Gone Rogue: We've gone rogue." />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="/style.css?v=13" />
+        <!-- Favicon links-->
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <script src="https://kit.fontawesome.com/049529442a.js" crossorigin="anonymous"></script>
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#2d89ef">
+        <meta name="theme-color" content="#ffffff">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                background: black;
+            }
+            @media (prefers-color-scheme: dark) {
+                body {
+                    background-color: black;
+                }
+            }
+            @import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+            .time {
+                font-family: 'Nabla', cursive;
+                display: flex;
+                color: white;
+                justify-content: center;
+                width: 100%;
+                height: 400px;
+                font-size: 75px;
+                align-items: center;
+            }
+            .buttons {
+                display: flex;
+                justify-content: space-between;
+                margin-left: 30px;
+                margin-right: 30px;
+                border-bottom: 2px solid white;
+                padding-bottom: 30px;
+            }
+            .buttons button {
+                font-family: 'Orbitron', sans-serif;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                font-size: 30px;
+                justify-content: center;
+                align-items: center;
+            }
+            .mainStartBtn {
+                padding: 5px;
+                border: 3px solid #092911;
+            }
+            .startBtn {
+                background-color: #092911;
+                color: #176427;
+                border: none;
+            }
+            .mainLapBtn {
+                padding: 5px;
+                border: 3px solid #1c1c1e;
+            }
+            .lapResetBtn {
+                background-color: #1c1c1e;
+                color: white;
+                border: none;
+            }
+            .timerStarted {
+                background: #340e0b;
+                color: #bc3d43;
+            }
+            .timerStartedMain {
+                border: 3px solid #340e0b;
+            }
+            .lap {
+                display: flex;
+                justify-content: space-between;
+                margin-left: 10px;
+                margin-right: 30px;
+                font-size: 30px;
+                color: white;
+                margin-top: 5px;
+            }
+            .timerSmaller {
+                font-size: 50px;
+            }
+            .not-supported {
+                word-wrap: normal;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="time">
+                <span id="hours"></span>
+                <span id="minutes">00:</span>
+                <span id="seconds">00.</span>
+                <span id="milliseconds">00</span>
+            </div>
+
+            <div class="buttons">
+                <div class="mainLapBtn">
+                    <button class="lapResetBtn"></button>
+                </div>
+
+                <div class="mainStartBtn">
+                    <button class="startBtn">Start</button>
+                </div>
+            </div>
+
+            <div class="laps">
+
+            </div>
+        </div>
+        <script type="text/javascript">
+const startBtn = document.querySelector(".startBtn");
+const mainStartBtn = document.querySelector('.mainStartBtn');
+
+const lapResetBtn = document.querySelector('.lapResetBtn');
+const mainLapBtn = document.querySelector('.mainLapBtn');
+
+const laps = document.querySelector('.laps');
+
+let milisec = 0;
+let sec = 0;
+let min = 0;
+let hour = 0;
+
+let m = 0;
+let s = 0;
+let ms = 0;
+let h = 0;
+
+let allLaps = [];
+let lapsNumber = 1;
+
+let time = document.querySelector('.time');
+let int = null;
+
+let isTimerStarted = false;
+let timerBegun = false;
+
+startBtn.addEventListener('click', () => {
+    timerBegun = true;
+    if(isTimerStarted === false) {
+        int = setInterval(displayTimer, 10);
+    } else if (isTimerStarted === true) {
+        clearInterval(int);
+    }
+    changeStartBtn();
+    resetAvaliable();
+})
+
+function displayTimer() {
+    milisec++;
+    
+    if (milisec >= 99) {
+        sec++;
+        milisec = 0;
+    }
+    if (sec >= 60) {
+        min++;
+        sec = 0;
+    }
+    if (min >= 60) {
+        hour++;
+        min = 0;
+    }
+
+    m = min < 10 ? "0" + min : min;
+    s = sec < 10 ? "0" + sec : sec;
+    ms = milisec < 10 ? "0" + milisec : milisec;
+    h = hour < 10 ? "0" + hour : hour;
+    if (hour == 0) {
+        time.innerHTML = `${m}:${s}.${ms}`;
+    }
+    else {
+        time.classList.add('timerSmaller');
+        time.innerHTML = `${h}:${m}:${s}.${ms}`;
+    }
+}
+
+function displayLaps() {
+    if (lapsNumber < 100) {
+        lapsNumber++;
+        laps.innerHTML = "";
+        if (allLaps.length > 0) {
+            allLaps.map(item => {
+                laps.innerHTML += `
+                <div class="lap">
+                    <span>Lap ${item.number}</span>
+                    <span>${item.time}</span>
+                </div>
+                `
+            })
+        }
+    }
+}
+
+function changeStartBtn() {
+    if (isTimerStarted === false) {
+        isTimerStarted = true;
+
+        startBtn.innerHTML = "Stop";
+        startBtn.classList.add("timerStarted");
+        mainStartBtn.classList.add('timerStartedMain');
+    } else {
+        isTimerStarted = false;
+        startBtn.innerHTML = "Start";
+        startBtn.classList.remove("timerStarted");
+        mainStartBtn.classList.remove('timerStartedMain');
+    }
+}
+
+function resetAvaliable() {
+    if(isTimerStarted === false) {
+        lapResetBtn.innerHTML = "Reset";
+    }
+    else {
+        lapResetBtn.innerHTML = "Lap";  
+    }
+}
+lapResetBtn.addEventListener('click', () => {
+    if (timerBegun === true)  {
+        if (isTimerStarted === false) {
+            clearInterval(int);
+            milisec = 0;
+            sec = 0;
+            min = 0;
+            hour = 0;
+
+            m = 0;
+            s = 0;
+            ms = 0;
+            h = 0;
+
+            allLaps = [];
+            lapsNumber = 1;
+
+            timerBegun = false;
+            lapResetBtn.innerHTML = "";
+
+            time.innerHTML = "00:00.00";
+            laps.innerHTML = "<div class='laps'></div>";
+            time.classList.remove('timerSmaller');
+        } else {
+            if (hour === 0) {
+                allLaps.push(
+                    {
+                        time: m + ":" + s + "." + ms,
+                        number: lapsNumber,
+                    }
+                )
+                displayLaps();
+            } else {
+                allLaps.push(
+                    {
+                        time: h + ":" + m + ":" + s + "." + ms,
+                        number: lapsNumber,
+                    }
+                )
+                displayLaps();
+            }
+        }
+    }
+})
+</script>
+    </body>
+</html>

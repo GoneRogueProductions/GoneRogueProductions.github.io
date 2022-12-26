@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Best Timer Ever</title>
+    <style>
+        div a img {
+            display: none;
+        }
+        html {
+            width: 100%;
+            height: 100%;
+        }
+        body {
+            background-image: linear-gradient(45deg, rgb(0, 0, 255), white)!important;
+            background-repeat: no-repeat;
+            font-family: -apple-system, Roboto, "Segoe UI", Liberation Sans, SansSerif, sans-serif;
+            width: 100%;
+            height: 100%;
+        }
+
+        .back {
+            left: 0;
+            top: 0;
+            margin-left: 10px;
+            background: white;
+            border-radius: 5px;
+            max-width: 100px;
+            padding: 10px;
+            color: #0000ff;
+            cursor: pointer;
+            transition-duration: 0.4s;
+        }
+        .back:hover {
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .top {
+            white-space: nowrap;
+        }
+        .top div {
+            display: inline-block;
+        }
+
+        .back p {
+            margin: 0;
+        }
+
+        .header h1 {
+            text-align: center;
+        }
+        .header {
+            display: inline;
+            width: 100%;
+        }
+
+        .page-content {
+            text-align: center;
+        }
+
+        #time {
+            font-family: Monaco;
+        }
+
+        .show p {
+            display: inline;
+            font-size: 40px;
+            margin-top: 0px;
+        }
+        #end {
+            color: red;
+        }
+
+        noscript {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            margin: auto;
+            margin: 0 10%;
+        }
+        noscript h1 {
+            margin:auto;
+        }
+
+        input {
+            font-size: 50px;
+            border: 2px solid #0000ff;
+            border-radius: 5px;
+            max-width: 100px;
+            margin-right: 10px;
+        }
+
+        .startButton {
+            border-radius: 5px;
+            background: #0000ff;
+            color: white;
+            font-size: 50px;
+            transition-duration: 0.4s;
+            border: 0;
+            height: inherit;
+            padding: 0 10px;
+            cursor: pointer;
+        }
+        .startButton:hover {
+            background: white;
+            color: black;
+            border: 2px solid #0000ff;
+        }
+        .show {
+            display: none;
+        }
+        .timerStarted {
+            display: inline-block;
+        }
+        #countdown {
+            font-size: 100px;
+            font-weight: bold;
+            font-family: "SF Mono", Monaco;
+        }
+        #time {
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        #christmas p {
+            display: inline;
+            margin-top: 0;
+            font-size: 48px;
+
+        }
+        #christmas {
+            background: rgb(121,9,9);
+            background: linear-gradient(90deg, rgba(121,9,9,1) 0%, rgba(0,255,1,1) 100%);
+            background-clip: text;
+            color: transparent;
+        }
+        .mono {
+            font-family: "SF Mono", "JetBrains Mono", Monaco, monospace !important;
+        }
+    </style>
+    <!-- Bootstrap
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    -->
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/049529442a.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<noscript>
+    <h1>This page uses extensive JavaScript to render the timer. Please enable JavaScript if needed.</h1>
+</noscript>
+<div class="top">
+    <div class="back" onclick="location.href='/index.php';">
+        <p><i class="fa-solid fa-angle-left"></i> Go Back</p>
+
+    </div>
+    <div class="header">
+        <h1>Best Timer Ever</h1>
+    </div>
+</div>
+<div class="page-content">
+    <div class="time">
+        <h1 id="time" class="mono"></h1>
+
+    </div>
+    <div id="christmas" class="mono">
+        <p>Days 'till Christmas: </p>
+        <p id="days"></p>
+        <p id="hours"></p>
+        <p id="mins"></p>
+        <p id="secs"></p>
+        <p id="millisec"></p>
+        <h2 id="end"></h2>
+    </div>
+    <hr>
+    <div class="timer">
+        <div class="set">
+            <h1>Set a Timer</h1>
+            <form action="#show" id="start">
+                <input type="number" id="hr" placeholder="hr" />
+                <input type="number" id="min" placeholder="m" />
+                <input type="number" id="sec" placeholder="s" />
+                <button onclick="startTimer();" class="startButton">Start</button>
+            </form>
+
+        </div>
+        <div class="show" id="show">
+            <hr>
+            <h1>See your Timer</h1>
+            <p id="countdown" class="mono"></p>
+        </div>
+    </div>
+</div>
+<script>
+    let ms;
+    function addZero(i) {
+        if (i < 10) {i = "0" + i}
+        return i;
+    }
+    function addZeroMillis(i) {
+        if (i < 0) {i = "000"}
+        else if (i < 10) {i = "00" + i}
+        else if (i < 100) {i = "0" + i}
+        console.log(i);
+        return i;
+    }
+    function setTime() {
+        const d = new Date();
+        let h = addZero(d.getUTCHours());
+        let m = addZero(d.getUTCMinutes());
+        let s = addZero(d.getUTCSeconds());
+        ms = addZeroMillis(d.getUTCMilliseconds());
+        let time = "Current Time: " + h + ":" + m + ":" + s + "." + ms;
+        document.getElementById("time").innerHTML = time;
+    }
+    setInterval(setTime, 1);
+
+
+    function padTo2Digits(num) {
+        return num.toString().padStart(2, '0');
+    }
+
+    function convertMsToTime(milliseconds) {
+        let seconds = Math.floor(milliseconds / 1000);
+        let minutes = Math.floor(seconds / 60);
+        let hours = Math.floor(minutes / 60);
+
+        seconds = seconds % 60;
+        minutes = minutes % 60;
+
+        // 👇️ If you don't want to roll hours over, e.g. 24 to 00
+        // 👇️ comment (or remove) the line below
+        // commenting next line gets you `24:00:00` instead of `00:00:00`
+        // or `36:15:31` instead of `12:15:31`, etc.
+        // hours = hours % 24;
+
+        return `${padTo2Digits(hours)}:${padTo2Digits(minutes)}:${padTo2Digits(
+            seconds,
+        )}`;
+    }
+
+    const showDiv = document.getElementById('show');
+
+    let time;
+    let currentDate;
+    let endDate;
+    let newDate;
+    let newDate1;
+    let millis;
+    let millis1;
+
+    const countdownEl = document.getElementById('countdown');
+    function startTimer() {
+
+
+
+        if (document.getElementById("min").value === "") {
+            document.getElementById("min").value = 0;
+        }
+        if (document.getElementById("hr").value === "") {
+            document.getElementById("hr").value = 0;
+        }
+        if (document.getElementById("sec").value === "") {
+            document.getElementById("sec").value = 0;
+        }
+
+        let startingMinutes = document.getElementById("min").value;
+        console.log(startingMinutes);
+        let startingSeconds = document.getElementById("sec").value;
+        let startingHours = document.getElementById("hr").value;
+
+
+        startingMinutes = parseInt(startingMinutes);
+        startingSeconds = parseInt(startingSeconds);
+        startingHours = parseInt(startingHours);
+
+        currentDate = new Date();
+        endDate = new Date();
+
+        endDate.setMinutes(currentDate.getMinutes() + startingMinutes);
+        endDate.setSeconds(currentDate.getMinutes() + startingSeconds);
+        endDate.setHours(currentDate.getHours() + startingHours);
+        endDate.setSeconds(currentDate.getSeconds() + startingSeconds);
+        endDate.setMilliseconds(0);
+        console.log("C: " + currentDate);
+        console.log("E: " + endDate);
+
+        setInterval (updateCountdown, 1);
+        showDiv.classList.add("timerStarted");
+        millis = 0;
+    }
+
+
+    function updateCountdown () {
+        currentDate = new Date();
+        newDate = endDate - currentDate;
+        if (newDate < 0) {
+            newDate1 = "Time's up!";
+        }
+        else {
+            newDate1 = convertMsToTime(newDate) + "." + addZeroMillis(Math.abs(1000- ms));
+        }
+
+
+        console.log(newDate1);
+        countdownEl.innerHTML = newDate1;
+    }
+
+    // The data/time we want to countdown to
+    var countDownDate = new Date("Dec 25, 2022 00:00:00").getTime();
+
+    // Run myfunc every second
+    var myfunc = setInterval(function() {
+
+        var now1  = new Date();
+        var now = new Date().getTime();
+        var timeleft = countDownDate - now;
+
+        // Calculating the days, hours, minutes and seconds left
+        var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+
+        // Result is output to the specific element
+        document.getElementById("days").innerHTML = days + "d "
+        document.getElementById("hours").innerHTML = hours + "h "
+        document.getElementById("mins").innerHTML = minutes + "m "
+        document.getElementById("secs").innerHTML = seconds + "s "
+        document.getElementById("millisec").innerHTML = addZeroMillis(1000 - now1.getUTCMilliseconds()) + "ms";
+
+        // Display the message when countdown is over
+        if (timeleft < 0) {
+            clearInterval(myfunc);
+            document.getElementById("days").innerHTML = ""
+            document.getElementById("hours").innerHTML = ""
+            document.getElementById("mins").innerHTML = ""
+            document.getElementById("secs").innerHTML = ""
+            document.getElementById("end").innerHTML = "TIME UP!!";
+        }
+    }, 1);
+</script>
+
+</body>
+</html>
+
