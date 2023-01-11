@@ -247,11 +247,12 @@
                 justify-content: center;
                 align-items: center;
                 font-size: 2em;
+                cursor: pointer;
             }
         </style>
     </head>
     <body id="darkTog">
-        <div class="navbar" id="darkTog">
+        <div class="navbar" id="darkTog1">
             <h1><img src="https://gonerogue.ml/apple-touch-icon.png" style="border-radius: 10px; height: 75px;" alt="GoneRogue Favicon"> Gаmes</h1>
             <div class="right-cont">
                 <div class="b-dark" onclick="switchTheme();">
@@ -627,6 +628,8 @@
         if (theme === true) {
             document.getElementById("darkTog").style.background="rgb(35,39,47)";
             document.getElementById("darkTog").style.color="rgb(235, 236, 240)";
+            document.getElementById("darkTog1").style.background="rgb(35,39,47)";
+            document.getElementById("darkTog1").style.color="rgb(235, 236, 240)";
             document.getElementById("search").style.background="rgb(35,39,47)";
             document.getElementById("search").style.border="0";
             document.getElementById("search").style.color="rgb(235, 236, 240)";
@@ -640,6 +643,8 @@
         else if (theme === false) {
             document.getElementById("darkTog").style.background="white";
             document.getElementById("darkTog").style.color="black";
+            document.getElementById("darkTog1").style.background="white";
+            document.getElementById("darkTog1").style.color="black";
             document.getElementById("search").style.background="rgb(238, 238, 238)";
             document.getElementById("search").style.border="0";
             document.getElementById("search").style.color="black";
