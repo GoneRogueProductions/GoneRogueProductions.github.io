@@ -625,28 +625,28 @@
     }
     function switchTheme() {
         if (theme === true) {
-            document.getElementById("darkTog").background="rgb(35,39,47)";
-            document.getElementById("darkTog").color="rgb(235, 236, 240)";
-            document.getElementById("search").background="rgb(35,39,47)";
-            document.getElementById("search").border="0";
-            document.getElementById("search").color="rgb(235, 236, 240)";
-            document.getElementById("footer").background="rgb(59, 66, 79)!important";
-            document.getElementById("footer").color="rgb(235, 236, 240)!important";
+            document.getElementById("darkTog").style.background="rgb(35,39,47)";
+            document.getElementById("darkTog").style.color="rgb(235, 236, 240)";
+            document.getElementById("search").style.background="rgb(35,39,47)";
+            document.getElementById("search").style.border="0";
+            document.getElementById("search").style.color="rgb(235, 236, 240)";
+            document.getElementById("footer").style.background="rgb(59, 66, 79)!important";
+            document.getElementById("footer").style.color="rgb(235, 236, 240)!important";
             $('#catalog').children('div').each(function () {
-                this.background="rgb(35,39,47)";
+                this.style.background="rgb(35,39,47)";
             });
             theme = false;
         }
         else if (theme === false) {
-            document.getElementById("darkTog").background="white";
-            document.getElementById("darkTog").color="black";
-            document.getElementById("search").background="rgb(238, 238, 238)";
-            document.getElementById("search").border="0";
-            document.getElementById("search").color="black";
-            document.getElementById("footer").background="white";
-            document.getElementById("footer").color="black";
+            document.getElementById("darkTog").style.background="white";
+            document.getElementById("darkTog").style.color="black";
+            document.getElementById("search").style.background="rgb(238, 238, 238)";
+            document.getElementById("search").style.border="0";
+            document.getElementById("search").style.color="black";
+            document.getElementById("footer").style.background="white";
+            document.getElementById("footer").style.color="black";
             $('#catalog').children('div').each(function () {
-                this.background="white";
+                this.style.background="white";
             });
             theme = false;
         }
