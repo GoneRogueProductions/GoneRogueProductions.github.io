@@ -197,6 +197,9 @@
                 padding-left: 20px;
                 border-radius: 10px;
             }
+            * {
+                transition: 0.4s;
+            }
             
             @media (prefers-color-scheme: dark) {
                 body {
@@ -247,8 +250,8 @@
             }
         </style>
     </head>
-    <body>
-        <div class="navbar">
+    <body id="darkTog">
+        <div class="navbar" id="darkTog">
             <h1><img src="https://gonerogue.ml/apple-touch-icon.png" style="border-radius: 10px; height: 75px;" alt="GoneRogue Favicon"> Gаmes</h1>
             <div class="right-cont">
                 <div class="b-dark" onclick="switchTheme();">
@@ -257,7 +260,7 @@
                 <div class="b-light" onclick="switchTheme();">
                     <i class="fa-solid fa-sun-bright"></i>
                 </div>
-                <div class="search">
+                <div class="search" id="search">
                     <i class="fa-solid fa-magnifying-glass search-icon"></i>
                     <input class="search-input" type="text" placeholder="Search...">
                 </div>
@@ -272,7 +275,7 @@
             </div>
             <em>Browse our collection below. All of our gаmes are in fullscreen, no аds.</em>
             <hr>
-            <div class="catalog">
+            <div class="catalog" id="catalog">
 
                 <div>
                     <img src="https://www.coolmathgames.com/sites/default/files/Run%203%20OG%20Image_0.png" alt="Run 3 Gameplay">
@@ -587,7 +590,7 @@
         </div>
 
         <!-- Footer -->
-<footer class="text-center text-lg-start bg-light text-muted" style="padding-top: 25px; margin-top: 25px;">
+<footer class="text-center text-lg-start bg-light text-muted" id="footer" style="padding-top: 25px; margin-top: 25px;">
     <!-- Section: Social media -->
   
     <!-- Section: Links  -->
@@ -616,7 +619,39 @@
   <!-- Footer -->
   <script>
     // Dark mode toggle
+    let theme = true;
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        let theme = false;
+    }
+    function switchTheme() {
+        if (theme === true) {
+            document.getElementById("darkTog").background="rgb(35,39,47)";
+            document.getElementById("darkTog").color="rgb(235, 236, 240)";
+            document.getElementById("search").background="rgb(35,39,47)";
+            document.getElementById("search").border="0";
+            document.getElementById("search").color="rgb(235, 236, 240)";
+            document.getElementById("footer").background="rgb(59, 66, 79)!important";
+            document.getElementById("footer").color="rgb(235, 236, 240)!important";
+            $('#catalog').children('div').each(function () {
+                this.background="rgb(35,39,47)";
+            });
+            theme = false;
+        }
+        else if (theme === false) {
+            document.getElementById("darkTog").background="white";
+            document.getElementById("darkTog").color="black";
+            document.getElementById("search").background="rgb(238, 238, 238)";
+            document.getElementById("search").border="0";
+            document.getElementById("search").color="black";
+            document.getElementById("footer").background="white";
+            document.getElementById("footer").color="black";
+            $('#catalog').children('div').each(function () {
+                this.background="white";
+            });
+            theme = false;
+        }
 
+    }
   </script>
     </body>
 </html>
