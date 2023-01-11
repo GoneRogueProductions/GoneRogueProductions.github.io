@@ -220,14 +220,41 @@
                     color: rgb(235, 236, 240)!important;
                 }
             }
+
+            .right-cont {
+                display: flex;
+                gap: 20px;
+            }
+            .b-dark {
+                display: initial;
+            }
+            .b-light {
+                display: none;
+            }
+            @media (prefers-color-scheme: dark) {
+                div.b-dark {
+                    display: none;
+                }
+                div.b-light {
+                    display: initial;
+                }
+            }
         </style>
     </head>
     <body>
         <div class="navbar">
             <h1><img src="https://gonerogue.ml/apple-touch-icon.png" style="border-radius: 10px; height: 75px;" alt="GoneRogue Favicon"> Gаmes</h1>
-            <div class="search">
-                <i class="fa-solid fa-magnifying-glass search-icon"></i>
-                <input class="search-input" type="text" placeholder="Search...">
+            <div class="right-cont">
+                <div class="b-dark" onclick="switchTheme();">
+                    <i class="fa-solid fa-moon"></i>
+                </div>
+                <div class="b-light" onclick="switchTheme();">
+                    <i class="fa-solid fa-sun-bright"></i>
+                </div>
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input class="search-input" type="text" placeholder="Search...">
+                </div>
             </div>
         </div>
         <div class="container">
@@ -581,5 +608,9 @@
   
   </footer>
   <!-- Footer -->
+  <script>
+    // Dark mode toggle
+    
+  </script>
     </body>
 </html>
