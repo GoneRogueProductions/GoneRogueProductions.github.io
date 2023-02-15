@@ -9,4 +9,4 @@ GoneRogue is a games website where you can play all of the latest and greatest w
 - [x] Games all fullscreen
 - [x] Cool!
 
-*This is the repo for github Pages to work. Feel free to copy!*
+*This is the repo for github Pages to work. Feel free to copy!* <!-- please note that this is @uimaxbai's thing and none of the other members of gone rogue are responcible for this! -->
