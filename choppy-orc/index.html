@@ -86,24 +86,6 @@
 <!-- <script src="https://ssl.kongcdn.com/javascripts/kongregate_api.js"></script> -->
 
 
-<script src="./autosplitter.js"></script>
-<script>
-    window.tool = {};
-    window.tool.debugEnabled = true;
-    window.tool.trainerMode = false;
-    window.tool.tasMode = false; // use special methods to register input listeners
-
-    window.tool.onSound = function (sound) {
-        window.autosplitter.onSound(sound);
-    };
-    window.tool.onScene = function (name) {
-        window.autosplitter.onScene(name);
-    };
-    window.tool.onUpdate = function (time) {
-        window.autosplitter.onUpdate(time);
-    };
-
-</script>
 
 <!-- The runtime script.  You can rename it, but don't forget to rename the reference here as well.
 This file will have been minified and obfuscated if you enabled "Minify script" during export. -->
