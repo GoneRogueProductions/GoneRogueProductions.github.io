@@ -6,59 +6,65 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 
+
 <url>
   <loc>https://gonerogue.ml/</loc>
-  <lastmod>2022-12-30T14:07:02+00:00</lastmod>
+  <lastmod>2023-05-05T15:05:39+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://gonerogue.ml/learn-to-fly.html</loc>
-  <lastmod>2022-12-30T14:07:02+00:00</lastmod>
+  <lastmod>2023-05-05T15:05:39+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://gonerogue.ml/craft.html</loc>
-  <lastmod>2022-12-30T14:07:02+00:00</lastmod>
+  <lastmod>2023-05-05T15:05:39+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://gonerogue.ml/car-drawing-game/car-drawing.html</loc>
-  <lastmod>2022-12-30T14:07:02+00:00</lastmod>
+  <lastmod>2023-05-05T15:05:39+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://gonerogue.ml/table-tanks/table-tanks.html</loc>
-  <lastmod>2022-12-30T14:07:02+00:00</lastmod>
+  <lastmod>2023-05-05T15:05:39+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://gonerogue.ml/duck-life.html</loc>
-  <lastmod>2022-12-30T14:07:02+00:00</lastmod>
+  <lastmod>2023-05-05T15:05:39+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://gonerogue.ml/gun_mayhem.html</loc>
-  <lastmod>2022-12-30T14:07:02+00:00</lastmod>
+  <lastmod>2023-05-05T15:05:39+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://gonerogue.ml/gun_mayhem_2.html</loc>
-  <lastmod>2022-12-30T14:07:02+00:00</lastmod>
+  <lastmod>2023-05-05T15:05:39+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://gonerogue.ml/pizza.html</loc>
-  <lastmod>2022-12-30T14:07:02+00:00</lastmod>
+  <lastmod>2023-05-05T15:05:39+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://gonerogue.ml/pacman.html</loc>
-  <lastmod>2022-12-30T14:07:02+00:00</lastmod>
+  <lastmod>2023-05-05T15:05:39+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://gonerogue.ml/soccer.html</loc>
-  <lastmod>2022-12-30T14:07:02+00:00</lastmod>
+  <lastmod>2023-05-05T15:05:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gonerogue.ml/choppy-orc/index.html</loc>
+  <lastmod>2023-05-05T15:05:39+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
