@@ -36,15 +36,7 @@
      align-items: center;
      gap: 20px;
 }
- .search {
-     background: rgb(238, 238, 238);
-     display: flex;
-     padding: 10px;
-     box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
-     border-radius: 10px;
-     border: 1px solid lightgray;
-     align-items: center;
-}
+ 
  .search-input {
      background: transparent;
      outline: none;
@@ -137,16 +129,37 @@
  * {
      transition: 0.4s;
 }
+#gamesList {
+     position: absolute;
+     list-style-type: none;
+     background: rgb(238, 238, 238);
+     border-radius: 0 0 10px 10px;
+     width: 264px;
+     padding: 10px;
+     display: none;
+}
+ #gamesList li a {
+     color: white;
+     transition: 0.2s;
+     text-decoration: none;
+}
+ #gamesList li a:hover {
+     filter: brightness(0.8);
+     text-decoration: underline;
+}
+ #gamesList li {
+     margin-bottom: 10px;
+}
  @media (prefers-color-scheme: dark) {
      body {
          background: rgb(35,39,47);
          color: rgb(235, 236, 240);
     }
-     div.search {
-         background: rgb(52, 58, 70,0.8);
+     div.search, ul#gamesList {
+         background: rgb(52, 58, 70, 0.9);
          border: 0;
     }
-     .search input {
+     .search input, ul#gamesList {
          color: rgb(235, 236, 240);
     }
      .catalog div, .navbar {
@@ -157,6 +170,17 @@
          color: rgb(235, 236, 240);
     }
 }
+ .search {
+     background: rgb(238, 238, 238);
+     display: flex;
+     padding: 10px;
+     box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+     border-radius: 10px;
+     border: 1px solid lightgray;
+     align-items: center;
+}
+
+
  .right-cont {
      display: flex;
      gap: 20px;
