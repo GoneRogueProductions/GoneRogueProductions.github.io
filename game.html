@@ -58,7 +58,7 @@
 
 <body id="darkTog">
     <div class="navbar" id="darkTog1">
-        <h1><img src="https://gonerogue.ml/apple-touch-icon.png" style="border-radius: 10px; height: 75px;"
+        <h1 onclick="window.location.href='/'" style="cursor: pointer;"><img src="https://gonerogue.ml/apple-touch-icon.png" style="border-radius: 10px; height: 75px;"
                 alt="GoneRogue Favicon"> Gаmes</h1>
         <div class="right-cont">
             <div class="b-dark" id="b-dark" onclick="switchTheme();">
@@ -166,17 +166,40 @@
             bottom: 10px;
             right: 10px;
             border: 0;
-            border-radius: 5px;
+            border-radius: 10px;
             height: 30px;
             width: 30px;
         }
         .full-screen:hover {
             filter: brightness(0.8);
         }
+        .game {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 1rem;
+        }
+        .game iframe {
+            border-radius: 1rem;
+        }
+        .game * {
+            height: 100%;
+            width: 100%;
+        }
+        .description {
+            background: rgba(255, 255, 255, 0.2);
+            position: relative;
+            border-radius: 1rem;
+            padding: 25px;
+            margin-top: 25px;
+            max-width: 800px;
+        }
     </style>
     <div class="container">
-        <h1>Game Title</h1>
-        <p>Play Game on GoneRogue.</p>
+        <h1 id="title"></h1>
+        <p id="description">Play games on GoneRogue.</p>
         <div class="game-container" id="game-container">
             <div class="loading-indicator">
                 <span class="loader"></span>
@@ -188,6 +211,9 @@
             <button class="full-screen" onclick="fullScreen()">
                 <i class="fa-solid fa-expand"></i>
             </button>
+        </div>
+        <div class="description">
+            <h5>DESCRIPTION</h5>
         </div>
     </div>
 
@@ -208,8 +234,8 @@
                             GoneRogue Gаmes
                         </h6>
                         <p>
-                            GoneRogue has a library of gаmes above, but it seems like you've scrolled to the end. We're
-                            working on requesting gаmes.
+                            <em>Hello from the other sideeeeeee......</em><br>
+                            Welcome to the bottom of the page. There are some links in the bottom left that you might like to read. Have a great time! (P.S: we're still working on requesting games.)
                         </p>
                     </div>
                     <!-- Grid column -->
@@ -223,9 +249,36 @@
     </footer>
     <!-- Footer -->
     <script src="./main.js"></script>
-    <script>
+    <script async>
         let elem = document.getElementById("game-container");
+        const urlParams = new URLSearchParams(window.location.search);
+        let query = urlParams.get('game');
         let inFS = false;
+        if (query == "") {
+            window.location.href="/";
+        }
+        query = query.replace("_", " ");
+        $("#title").text(query);
+        $("#description").text("Play " + query + " on GoneRogue.")
+        if (query == "Choppy Orc") {
+            $(".game").append("<iframe src='./choppy-orc/index.html' title='Choppy Orc' frameborder='0' style='border: none;'></iframe>");
+            $(".game-container").css("aspect-ratio","16 / 9");
+        }
+        else if (query == "Slope") {
+            $(".game").append("<iframe src='https://slope.gonerogue.ml/' title='Slope' frameborder='0' style='border: none;'></iframe>");
+            // $(".game-container").css("aspect-ratio", "16 / 9");
+        }
+        else if (query == "Run") {
+            // ub code here
+        }
+        else if (query == "Geometry Dash") {
+            $(".game").append("<iframe src='https://gd.gonerogue.ml' title='Geometry Dash' frameborder='0' style='border: none;'></iframe>");
+        }
+        else {
+            window.location.href = "/";
+        }
+
+        // Fullscreen stuff
         function fullScreen() {
             if (document.fullscreenElement) {
                 console.log("hi");
@@ -264,6 +317,8 @@
                 inFS = false;
             }
         }
+
+        
     </script>
 </body>
 
