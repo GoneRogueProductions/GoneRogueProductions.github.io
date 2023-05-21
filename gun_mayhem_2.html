@@ -35,14 +35,13 @@
         <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
         <link rel="stylesheet" href="style.css">
         <style>
-            body {
+            body, html {
                 margin: 0px;
+                overflow: hidden!important;
             }
         </style>
     </head>
     <body>
-        <h1>G‎u‎n Mayhem 2 on GoneRogue</h1>
-        <p>This game is not in fullscreen by default as there may be lag.</p>
         <div id='ruffle' style="height: 50%; width: 50%;"></div>
         <script>
 var h = window.innerHeight;
@@ -56,13 +55,21 @@ swfobject.embedSWF = function(url, cont, width, height){
         player = Object.assign(document.getElementById(cont).appendChild(ruffle.createPlayer()), {
             width: width,
             height: height,
-            style: 'width: ' + width + 'px; height: ' + height + 'px',
+            style: 'width: ' + 800 + 'px; height: ' + 600 + 'px',
         });
     
     player.load({ url: url });
 }
 
-swfobject.embedSWF('/gun_mayhem_2.swf', 'ruffle', w, h);
+swfobject.embedSWF('./gun_mayhem_2.swf', 'ruffle', w, h);
+
+    a = document.querySelector("ruffle-player");
+    b = document.querySelector('html');
+    function updateCanvas() {
+        a.style.width = b.offsetWidth.toString() + "px";
+        a.style.height = b.offsetHeight.toString() + "px";
+    }
+    setInterval(updateCanvas, 500);
         </script>
     </body>
 </html>

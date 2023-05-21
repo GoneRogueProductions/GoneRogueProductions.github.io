@@ -156,7 +156,10 @@
                 opacity: 0;
             }
         }
-    
+        
+        html {
+            --game-border-radius: 1rem;
+        }
     
         .full-screen {
             aspect-ratio: 1 / 1;
@@ -179,10 +182,10 @@
             left: 0;
             width: 100%;
             height: 100%;
-            border-radius: 1rem;
+            border-radius: var(--game-border-radius);
         }
         .game iframe {
-            border-radius: 1rem;
+            border-radius: var(--game-border-radius);
         }
         .game * {
             height: 100%;
@@ -257,7 +260,7 @@
         if (query == "" || query == null) {
             window.location.href="/";
         }
-        query = query.replace("_", " ");
+        query = query.replaceAll("_", " ");
         $("#title").text(query);
         $("#description").text("(BETA) Play " + query + " on GoneRogue.")
         if (query == "Choppy Orc") {
@@ -274,9 +277,24 @@
         else if (query == "Geometry Dash") {
             $(".game").append("<iframe src='https://gd.gonerogue.ml' title='Geometry Dash' frameborder='0' style='border: none;'></iframe>");
         }
-        else {
-            window.location.href = "/";
+        else if (query == "Gun Mayhem 2") {
+            $(".game").append("<iframe src='./gun_mayhem_2.html' title='Geometry Dash' frameborder='0' style='border: none;'></iframe>");
         }
+        else if (query == "Gun Mayhem") {
+            $(".game").append("<iframe src='./gun_mayhem.html' title='Geometry Dash' frameborder='0' style='border: none;'></iframe>");
+        }
+        else if (query == "Learn To Fly") {
+            $(".game").append("<iframe src='./learn-to-fly.html' title='Geometry Dash' frameborder='0' style='border: none;'></iframe>");
+        }
+        else if (query == "Pacman") {
+            $(".game").append("<iframe src='./pacman.html' title='Geometry Dash' frameborder='0' style='border: none;'></iframe>");
+        }
+        else if (query == "Soccer Skills") {
+            $(".game").append("<iframe src='./soccer.html' title='Geometry Dash' frameborder='0' style='border: none;'></iframe>");
+        }
+        /* else {
+            window.location.href = "/";
+        } */
 
         // Fullscreen stuff
         function fullScreen() {
@@ -301,6 +319,7 @@
                     elem.msRequestFullscreen();
                 }
                 $(".full-screen").html('<i class="fa-solid fa-compress"></i>');
+                $("html").css("--game-border-radius", "0");
             } else {
                 console.log("hi1");
                 if (document.exitFullscreen) {
@@ -314,6 +333,7 @@
                 }
                 
                 $(".full-screen").html('<i class="fa-solid fa-expand"></i>');
+                $("html").css("--game-border-radius", "1rem");
                 inFS = false;
             }
         }
