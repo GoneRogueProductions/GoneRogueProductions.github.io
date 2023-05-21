@@ -254,12 +254,12 @@
         const urlParams = new URLSearchParams(window.location.search);
         let query = urlParams.get('game');
         let inFS = false;
-        if (query == "") {
+        if (query == "" || query == null) {
             window.location.href="/";
         }
         query = query.replace("_", " ");
         $("#title").text(query);
-        $("#description").text("Play " + query + " on GoneRogue.")
+        $("#description").text("(BETA) Play " + query + " on GoneRogue.")
         if (query == "Choppy Orc") {
             $(".game").append("<iframe src='./choppy-orc/index.html' title='Choppy Orc' frameborder='0' style='border: none;'></iframe>");
             $(".game-container").css("aspect-ratio","16 / 9");
