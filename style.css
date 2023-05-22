@@ -139,7 +139,6 @@
      display: none;
 }
  #gamesList li a {
-     color: white;
      transition: 0.2s;
      text-decoration: none;
 }
@@ -169,6 +168,9 @@
          background-color: rgb(59, 66, 79);
          color: rgb(235, 236, 240);
     }
+    #gamesList li a {
+        color: white;
+    }
 }
  .search {
      background: rgb(238, 238, 238);
@@ -178,6 +180,7 @@
      border-radius: 10px;
      border: 1px solid lightgray;
      align-items: center;
+     width: 264px;
 }
 
 
