@@ -21,9 +21,9 @@ _autosplitter = (function() {
     /*
     Function to move between levels (for practice mode)
     */
-    var moveToLevel = function(level) {
+    /* var moveToLevel = function(level) {
         window.game.Gr(window.game.Rc[level + 1]);
-    };
+    }; */
 
     var isInSpeedrun = function() {
         var speedrunning_var = window.game.Sw.find(
