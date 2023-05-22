@@ -280,7 +280,7 @@ _autosplitter = (function() {
         if (state.speedrun_mode_active || !state.in_level) return;
         if (e.which == 220) {
             if (skippingEnabled == true) skippingEnabled = false;
-            if (skippingEnabled == false) skippingEnabled = true;
+            else if (skippingEnabled == false) skippingEnabled = true;
         }
         // "+" or "=" key, to move to the next level
         if ((e.which == 43 || e.which == 61) && state.level < 15 && skippingEnabled == true) {
