@@ -1,3 +1,4 @@
+var skippingEnabled = false;
 _autosplitter = (function() {
     var chestsInLevel = [2, 1, 1, 2, 1, 2, 2, 1, 2, 2, 1, 2, 1, 1, 1];
 
@@ -22,7 +23,7 @@ _autosplitter = (function() {
     Function to move between levels (for practice mode)
     */
     var moveToLevel = function(level) {
-        // window.game.Gr(window.game.Rc[level + 1]);
+        window.game.Gr(window.game.Rc[level + 1]);
     };
 
     var isInSpeedrun = function() {
@@ -277,14 +278,17 @@ _autosplitter = (function() {
     $(document).keypress(function(e) {
         // Level movement is only allowed during gameplay in practice mode
         if (state.speedrun_mode_active || !state.in_level) return;
-
+        if (e.which == 220 && state.in_level) {
+            if (skippingEnabled == true) skippingEnabled = false;
+            if (skippingEnabled == false) skippingEnabled = true;
+        }
         // "+" or "=" key, to move to the next level
-        if ((e.which == 43 || e.which == 61) && state.level < 15) {
+        if ((e.which == 43 || e.which == 61) && state.level < 15 && skippingEnabled == true) {
             moveToLevel(state.level + 1);
         }
 
         // "-" key, to move to the previous level
-        if (e.which == 45 && state.level > 1) {
+        if (e.which == 45 && state.level > 1 && skippingEnabled == true) {
             moveToLevel(state.level - 1);
         }
     });
