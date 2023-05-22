@@ -275,12 +275,17 @@ _autosplitter = (function() {
     Level movement handling - allowing to move between levels with the keyboard
     ***********/
 
-    $(document).keypress(function(e) {
+    $(document).keypress(function (e) {
         // Level movement is only allowed during gameplay in practice mode
-        if (state.speedrun_mode_active || !state.in_level) return;
-        if (e.which == 220) {
-            if (skippingEnabled == true) skippingEnabled = false;
-            else if (skippingEnabled == false) skippingEnabled = true;
+        // skippingEnabled == true;
+        // if (state.speedrun_mode_active || !state.in_level) return;
+        if (e.which == 96) {
+            if (skippingEnabled == true) {
+                skippingEnabled = false;
+            }
+            else if (skippingEnabled == false) {
+                skippingEnabled = true;
+            }
         }
         // "+" or "=" key, to move to the next level
         if ((e.which == 43 || e.which == 61) && state.level < 15 && skippingEnabled == true) {

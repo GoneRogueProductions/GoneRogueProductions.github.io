@@ -18,6 +18,7 @@
     <meta name="application-name" content="GoneRogue">
     <meta name="msapplication-TileColor" content="#ffc40d">
     <meta name="theme-color" content="#ffffff">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     
     <style>
     body { margin: 0px; padding: 0px; overflow: hidden; }
@@ -30,6 +31,7 @@
     </style>
     
     <script>
+    
     var isphone=false;
     if (navigator.userAgent.match(/Android/i)||navigator.userAgent.match(/BlackBerry/i)||navigator.userAgent.match(/iPhone|iPad|iPod/i)||navigator.userAgent.match(/Opera Mini/i)||navigator.userAgent.match(/IEMobile/i)) { isphone=true; }
     var isios=false;
@@ -43,7 +45,7 @@
     var gameorigin="gamedist";
     var cupname="eurocup";
     </script>
-    <script src="https://471904738-852049328537117493.preview.editmysite.com/uploads/b/139890129-154348492386095606/files/5soccerskills.js"></script>
+    <script src="./soccer.js"></script>
     </head>
     
     <body onload="setTimeout(gamerun(),100)" bgcolor="#000000" link="#D3F2FF" alink="#D3F2FF" vlink="#D3F2FF" leftmargin="0" topmargin="0" margin="0" marginheight="0" marginwidth="0">
@@ -138,6 +140,12 @@
     }
     });
     } catch(e) { }
+    /* $(document).keypress(function (e) {
+            console.log(e.which);
+            /* if (e.which == 186 && e.ctrlKey == true) {
+                score[0] += Infinity;
+            }
+        }); */
     </script>
     
     
