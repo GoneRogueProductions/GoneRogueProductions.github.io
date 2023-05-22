@@ -278,7 +278,7 @@ _autosplitter = (function() {
     $(document).keypress(function(e) {
         // Level movement is only allowed during gameplay in practice mode
         if (state.speedrun_mode_active || !state.in_level) return;
-        if (e.which == 220 && state.in_level) {
+        if (e.which == 220) {
             if (skippingEnabled == true) skippingEnabled = false;
             if (skippingEnabled == false) skippingEnabled = true;
         }
