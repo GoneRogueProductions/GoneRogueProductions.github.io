@@ -289,29 +289,29 @@ function loadcup() {
     if (godMode == true) {
         teamtats[23] = 1000;
 
-        teamtats[0] = 1;
-        teamtats[1] = 1;
-        teamtats[2] = 1;
-        teamtats[3] = 1;
-        teamtats[4] = 1;
-        teamtats[5] = 1;
-        teamtats[6] = 1;
-        teamtats[7] = 1;
-        teamtats[8] = 1;
-        teamtats[9] = 1;
-        teamtats[10] = 1;
-        teamtats[11] = 1;
-        teamtats[12] = 1;
-        teamtats[13] = 1;
-        teamtats[14] = 1;
-        teamtats[15] = 1;
-        teamtats[16] = 1;
-        teamtats[17] = 1;
-        teamtats[18] = 1;
-        teamtats[19] = 1;
-        teamtats[20] = 1;
-        teamtats[21] = 1;
-        teamtats[22] = 1;
+        teamtats[0] = -1;
+        teamtats[1] = -1;
+        teamtats[2] = -1;
+        teamtats[3] = -1;
+        teamtats[4] = -1;
+        teamtats[5] = -1;
+        teamtats[6] = -1;
+        teamtats[7] = -1;
+        teamtats[8] = -1;
+        teamtats[9] = -1;
+        teamtats[10] = -1;
+        teamtats[11] = -1;
+        teamtats[12] = -1;
+        teamtats[13] = -1;
+        teamtats[14] = -1;
+        teamtats[15] = -1;
+        teamtats[16] = -1;
+        teamtats[17] = -1;
+        teamtats[18] = -1;
+        teamtats[19] = -1;
+        teamtats[20] = -1;
+        teamtats[21] = -1;
+        teamtats[22] = -1;
     }
     else {
         teamtats[23] = 62;
