@@ -8,13 +8,12 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="white">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4739296020319725"
         crossorigin="anonymous"></script>
-    <link rel="canonical" href="https://gonerogue.ml/" />
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
     <meta charset="utf-8">
     <meta name="description"
-        content="Experience gaming without interruptions at GoneRogue: your ultimate destination for immersive fullscreen games. Explore a vast collection of ad-free titles, from action-packed adventures to mind-bending puzzles.">
+        content="Embark on an unforgettable gaming adventure at GoneRogue. Immerse yourself in a captivating and ad-free gaming experience with our collection of exciting and diverse games.">
     <meta name="keywords"
         content="gonerogue, gonerogue games, gonerogue productions, games, unblocked, unblocked games 79, unblocked games, 2048, minecraft, run, run 3, car drawing, table tanks, duck life, duck life 4, gun mayhem, gun mayhem 2, pizzeria, bitlife, pacman, flappy bird, cookie clicker, edge surf, motox3m, motox3m2, soccer skills, soccer skills euro cup">
     <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
@@ -266,6 +265,8 @@
     <!-- Footer -->
     <script src="./main.js"></script>
     <script async>
+        document.title = "Play "+query+" on GoneRogue!"
+
         console.log("%c WARNING!","font-size: 5em; color: red;");
         console.log("%c Do not paste ANYTHING inside here. They could steal your account, and furthermore, blacklisted modifications (aka cheats) are NOT ALLOWED. Using them may get you a ban from this website. Proceed cautiously!", "font-size: large;");
         let elem = document.getElementById("game-container");
@@ -279,33 +280,45 @@
         $("#title").text(query);
         $("#description").text("(BETA) Play " + query + " on GoneRogue.")
         if (query == "Choppy Orc") {
+            $('meta[name="description"]').attr("content", "In Choppy Orc, tep into the shoes of a orc warrior in this thrilling adventure. Use your axe to get through to the final level.");
             $(".game").append("<iframe src='./choppy-orc/index.html' title='Choppy Orc' frameborder='0' style='border: none;'></iframe>");
             $(".game-container").css("aspect-ratio","16 / 9");
         }
         else if (query == "Slope") {
+            $('meta[name="description"]').attr("content", "Slope. Defy gravity and master the treacherous slopes in this thrilling game of skill. Keep your ball rolling and survive the twists ans obstacles.");
             $(".game").append("<iframe src='https://slope.gonerogue.ml/' title='Slope' frameborder='0' style='border: none;'></iframe>");
             // $(".game-container").css("aspect-ratio", "16 / 9");
         }
         else if (query == "Run") {
+            $('meta[name="description"]').attr("content", "Can you run to the end? In Run, dodge obstacles, collect power-ups, and go the distance.");
             // ub code here
         }
         else if (query == "Geometry Dash") {
+            $('meta[name="description"]').attr("content", "Prepare for a rhythmic challenge in Geometry Dash. Jump, flip, and fly through geometric obstacles.");
             $(".game").append("<iframe src='https://gd.gonerogue.ml' title='Geometry Dash' frameborder='0' style='border: none;'></iframe>");
         }
         else if (query == "Gun Mayhem 2") {
+            $('meta[name="description"]').attr("content", " Unleash explosive mayhem in Gun Mayhem 2, the action-packed sequel. Arm yourself with even more weapons, navigate dynamic maps, and dominate opponents in intense multiplayer battles.");
             $(".game").append("<iframe src='./gun_mayhem_2.html' title='Geometry Dash' frameborder='0' style='border: none;'></iframe>");
         }
         else if (query == "Gun Mayhem") {
+            $('meta[name="description"]').attr("content", "Arm yourself and dominate the battlefield in Gun Mayhem, the explosive multiplayer shooter. Outgun your opponents, strategize your moves, and claim victory in the ultimate gunfight.");
             $(".game").append("<iframe src='./gun_mayhem.html' title='Geometry Dash' frameborder='0' style='border: none;'></iframe>");
         }
         else if (query == "Learn To Fly") {
+            $('meta[name="description"]').attr("content", "You are a penguin who wants to take to the skies and fulfill your dream of flight in Learn To Fly. Upgrade your equipment, perfect your techniques, and soar to new heights in this addictive game.");
             $(".game").append("<iframe src='./learn-to-fly.html' title='Geometry Dash' frameborder='0' style='border: none;'></iframe>");
         }
         else if (query == "Pacman") {
+            $('meta[name="description"]').attr("content", "Relive the arcade nostalgia with Pacman. Navigate the maze, eat pellets, and evade ghosts in the ultimate quest for high scores. Join Pacman and gobble up the fun!");
             $(".game").append("<iframe src='./pacman.html' title='Geometry Dash' frameborder='0' style='border: none;'></iframe>");
         }
         else if (query == "Soccer Skills") {
+            $('meta[name="description"]').attr("content", "Showcase your finesse and precision in Soccer Skills, the exciting soccer game. Dribble, pass, and score goals with expert technique to become a soccer legend.");
             $(".game").append("<iframe src='./soccer.html' title='Geometry Dash' frameborder='0' style='border: none;'></iframe>");
+        }
+        else {
+            $('meta[name="description"]').attr("content", "Embark on an unforgettable gaming adventure at GoneRogue. Immerse yourself in a captivating and ad-free gaming experience with our collection of exciting and diverse games.");
         }
         /* else {
             window.location.href = "/";
