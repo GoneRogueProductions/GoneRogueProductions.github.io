@@ -265,7 +265,6 @@
     <!-- Footer -->
     <script src="./main.js"></script>
     <script async>
-        document.title = "Play "+query+" on GoneRogue!"
 
         console.log("%c WARNING!","font-size: 5em; color: red;");
         console.log("%c Do not paste ANYTHING inside here. They could steal your account, and furthermore, blacklisted modifications (aka cheats) are NOT ALLOWED. Using them may get you a ban from this website. Proceed cautiously!", "font-size: large;");
@@ -277,6 +276,7 @@
             window.location.href="/";
         }
         query = query.replaceAll("_", " ");
+        document.title = "Play " + query + " on GoneRogue!"
         $("#title").text(query);
         $("#description").text("(BETA) Play " + query + " on GoneRogue.")
         if (query == "Choppy Orc") {
