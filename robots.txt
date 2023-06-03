@@ -1,4 +1,7 @@
 User-agent: *
 Disallow: /*.html
 
+User-agent: *
+Disallow: /*.swf
+
 Sitemap: http://gonerogue.ml/sitemap.xml
