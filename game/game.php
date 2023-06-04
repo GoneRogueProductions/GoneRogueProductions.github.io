@@ -1,8 +1,15 @@
+<?php
+
+if ($code == "" || $title == "") {
+    header("Location: /");
+}
+
+echo `
 <!DOCTYPE html>
 <html>
 
 <head>
-    <title>GoneRogue Games: the fullscreen unblocked games site</title>
+    <title>`.$title.`</title>
 
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="white">
@@ -13,7 +20,7 @@
 
     <meta charset="utf-8">
     <meta name="description"
-        content="Embark on an unforgettable gaming adventure at GoneRogue. Immerse yourself in a captivating and ad-free gaming experience with our collection of exciting and diverse games.">
+        content="`.$description.`">
     <meta name="keywords"
         content="gonerogue, gonerogue games, gonerogue productions, games, unblocked, unblocked games 79, unblocked games, 2048, minecraft, run, run 3, car drawing, table tanks, duck life, duck life 4, gun mayhem, gun mayhem 2, pizzeria, bitlife, pacman, flappy bird, cookie clicker, edge surf, motox3m, motox3m2, soccer skills, soccer skills euro cup">
     <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
@@ -21,12 +28,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta itemprop="name" content="GoneRogue Games">
     <meta itemprop="description"
-        content="Experience gaming without interruptions at GoneRogue: your ultimate destination for immersive fullscreen games. Explore a vast collection of ad-free titles, from action-packed adventures to mind-bending puzzles.">
+        content="`.$description.`">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Social Media -->
     <meta name="og:description"
-        content="Experience gaming without interruptions at GoneRogue: your ultimate destination for immersive fullscreen games. Explore a vast collection of ad-free titles, from action-packed adventures to mind-bending puzzles.">
+        content="`.$description.` Play in your browser.">
     <meta name="og:title" content="GoneRogue Games: the no-ads fullscreen games site">
     <meta name="og:type" content="website">
     <meta name="og:image" content="/social.png">
@@ -63,7 +70,13 @@
             "position": 1,
             "name": "Games",
             "item": "https://gonerogue.ml"
-          }]
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "`.$game.`"
+          },
+          ]
         }
     </script>
 </head>
@@ -213,15 +226,15 @@
         }
     </style>
     <div class="container">
-        <h1 id="title"></h1>
-        <p id="description">Play gаmes on GoneRogue.</p>
+        <h1 id="title">`.$game.`</h1>
+        <p id="description">Play `.$game.` on GoneRogue.</p>
         <div class="game-container" id="game-container">
             <div class="loading-indicator">
                 <span class="loader"></span>
                 <span style="margin-top: 25px; color: white;">Loading your gаme...</span>
             </div>
             <div class="game">
-
+                `.$code.`
             </div>
             <button class="full-screen" onclick="fullScreen()">
                 <i class="fa-solid fa-expand"></i>
@@ -229,6 +242,7 @@
         </div>
         <div class="description">
             <h5>DESCRIPTION</h5>
+            <p>`.nl2br($long_desc).`</p>
         </div>
     </div>
 
@@ -271,24 +285,15 @@
         console.log("%c WARNING!","font-size: 5em; color: red;");
         console.log("%c Do not paste ANYTHING inside here. They could steal your account, and furthermore, blacklisted modifications (aka cheats) are NOT ALLOWED. Using them may get you a ban from this website. Proceed cautiously!", "font-size: large;");
         let elem = document.getElementById("game-container");
-        const urlParams = new URLSearchParams(window.location.search);
-        let query = urlParams.get('game');
         let inFS = false;
-        if (query == "" || query == null) {
-            window.location.href="/";
-        }
-        query = query.replaceAll("_", " ");
-        document.title = "Play " + query + " on GoneRogue!";
-        $("#title").text(query);
-        $("#description").text("(BETA) Play " + query + " on GoneRogue.");
-        if (query == "Choppy Orc") {
+        /* if (query == "Choppy Orc") {
             $('meta[name="description"]').attr("content", "In Choppy Orc, tep into the shoes of a orc warrior in this thrilling adventure. Use your axe to get through to the final level.");
             $(".game").append("<iframe src='./choppy-orc/index.html' title='Choppy Orc' frameborder='0' style='border: none;'></iframe>");
             $(".game-container").css("aspect-ratio","16 / 9");
         }
         else if (query == "Slope") {
-            $('meta[name="description"]').attr("content", "Slope. Defy gravity and master the treacherous slopes in this thrilling game of skill. Keep your ball rolling and survive the twists ans obstacles.");
-            $(".game").append("<iframe src='https://slope.gonerogue.ml/' title='Slope' frameborder='0' style='border: none;'></iframe>");
+            $('meta[name="description"]').attr("content", "");
+            $(".game").append("");
             // $(".game-container").css("aspect-ratio", "16 / 9");
         }
         else if (query == "Run") {
@@ -321,7 +326,7 @@
         }
         else {
             $('meta[name="description"]').attr("content", "Embark on an unforgettable gaming adventure at GoneRogue. Immerse yourself in a captivating and ad-free gaming experience with our collection of exciting and diverse games.");
-        }
+        } */
         /* else {
             window.location.href = "/";
         } */
@@ -373,3 +378,7 @@
 </body>
 
 </html>
+
+`;
+
+?>
