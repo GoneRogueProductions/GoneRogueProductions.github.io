@@ -4,7 +4,7 @@ $title = "Play Learn To Fly on GoneRogue";
 $description = "You are a penguin who wants to take to the skies and fulfill your dream of flight in Learn To Fly. Upgrade your equipment, perfect your techniques, and soar to new heights in this addictive game.";
 $game = "Learn To Fly";
 $long_desc = "None yet!\nHi!";
-$code = "<script src=\"https://unpkg.com/@ruffle-rs/ruffle@0.1.0-nightly.2023.6.3/ruffle.js\"></script>
+$code = "<script defer src=\"https://unpkg.com/@ruffle-rs/ruffle@0.1.0-nightly.2023.6.3/ruffle.js\"></script>
         <div id='ruffle'></div>
         <script>
 var h = window.innerHeight;

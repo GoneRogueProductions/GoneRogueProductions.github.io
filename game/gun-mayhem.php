@@ -4,7 +4,7 @@ $title = "Play Gun Mayhem on GoneRogue";
 $description = "Arm yourself and dominate the battlefield in Gun Mayhem, the explosive multiplayer shooter. Outgun your opponents, strategize your moves, and claim victory in the ultimate gunfight.";
 $game = "Gun Mayhem";
 $long_desc = "None yet!\nHi!";
-$code = "<script src=\"https://unpkg.com/@ruffle-rs/ruffle@0.1.0-nightly.2023.6.3/ruffle.js\"></script>
+$code = "<script defer src=\"https://unpkg.com/@ruffle-rs/ruffle@0.1.0-nightly.2023.6.3/ruffle.js\"></script>
         <div id='ruffle'></div>
         <script>
 var h = window.innerHeight;

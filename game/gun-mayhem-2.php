@@ -4,7 +4,7 @@ $title = "Play Gun Mayhem 2 on GoneRogue";
 $description = "Unleash explosive mayhem in Gun Mayhem 2, the action-packed sequel. Arm yourself with even more weapons, navigate dynamic maps, and dominate opponents in intense multiplayer battles.";
 $game = "Gun Mayhem 2";
 $long_desc = "None yet!\nHi!";
-$code = "<script src=\"https://unpkg.com/@ruffle-rs/ruffle@0.1.0-nightly.2023.6.3/ruffle.js\"></script>
+$code = "<script defer src=\"https://unpkg.com/@ruffle-rs/ruffle@0.1.0-nightly.2023.6.3/ruffle.js\"></script>
         <div id='ruffle'></div>
         <script>
 var h = window.innerHeight;
