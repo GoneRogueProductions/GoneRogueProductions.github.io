@@ -2,8 +2,8 @@
 
 $run = "https://gc.gonerogue.ml/cdn/html5/run3/";
 $slope = "/game/slope";
-$gd = "/game/geometry-dash.php";
-$ltf = "/game/learn-to-fly.php";
+$gd = "/game/geometry-dash";
+$ltf = "/game/learn-to-fly";
 $mc1 = "/craft";
 $mc2 = "https://eaglercraftx.uimaxbai.repl.co";
 $cdg = "/car-drawing-game/car-drawing.html";
@@ -12,8 +12,8 @@ $dl1 = "https://gc.gonerogue.ml/cdn/html5/ducklife/";
 $dl2 = "https://gc.gonerogue.ml/cdn/html5/ducklife2/";
 $dl3 = "https://gc.gonerogue.ml/cdn/html5/ducklife3/";
 $dl4 = "/duck-life.html";
-$gm = "/game/gun-mayhem.php";
-$gm2 = "/game/gun-mayhem-2.php";
+$gm = "/game/gun-mayhem";
+$gm2 = "/game/gun-mayhem-2";
 $pp = "/pizza.html";
 $bl = "https://bitlife.gonerogue.ml/";
 $pm = "/game/pacman.php";
@@ -21,8 +21,8 @@ $fb = "https://gc.gonerogue.ml/cdn/html5/flappybird/";
 $cc = "https://gc.gonerogue.ml/cdn/html5/cookieclicker/";
 $es = "https://gc.gonerogue.ml/cdn/html5/edge-surf/";
 $x3m = "https://gc.gonerogue.ml/cdn/html5/motox3m2/";
-$ss = "/game/soccer-skills.php";
-$co = "/game/choppy-orc.php";
+$ss = "/game/soccer-skills";
+$co = "/game/choppy-orc";
 $t048 = "https://2048.gonerogue.ml/"; 
 
 ?>
