@@ -83,7 +83,7 @@ echo '
 
 <body id="darkTog">
     <div class="navbar" id="darkTog1">
-        <h2 onclick="window.location.href='/'" style="cursor: pointer; font-size: 2em;"><img src="https://gonerogue.ml/apple-touch-icon.png" style="border-radius: 10px; height: 75px;"
+        <h2 onclick="window.location.href=\'/\'" style="cursor: pointer; font-size: 2em;"><img src="https://gonerogue.ml/apple-touch-icon.png" style="border-radius: 10px; height: 75px;"
                 alt="GoneRogue Favicon"> Gаmes</h2>
         <div class="right-cont">
             <div class="b-dark" id="b-dark" onclick="switchTheme();">
