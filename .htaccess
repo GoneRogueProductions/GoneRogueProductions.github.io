@@ -3,3 +3,10 @@ ErrorDocument 404 /errors/404.html
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+<FilesMatch "\.avif$">
+    Header set Content-Type "image/avif"
+</FilesMatch>
+<FilesMatch "\.webp$">
+    Header set Content-Type "image/webp"
+</FilesMatch>
