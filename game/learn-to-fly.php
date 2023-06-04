@@ -24,7 +24,7 @@ swfobject.embedSWF = function(url, cont, width, height){
     player.load({ url: url });
 }
 
-swfobject.embedSWF('/flash/learn_to_fly.swf', 'ruffle', w, h);
+swfobject.embedSWF('/flash/learn-to-fly.swf', 'ruffle', w, h);
 
     a = document.querySelector(\"ruffle-player\");
     b = document.querySelector('.game');
