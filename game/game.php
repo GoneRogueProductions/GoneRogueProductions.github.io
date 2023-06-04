@@ -58,8 +58,8 @@ echo `
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
-    <script defer src="./fontawesome.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./style.min.css">
+    <script defer src="/fontawesome.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style.min.css">
 
     <script type="application/ld+json">
         {
@@ -279,7 +279,7 @@ echo `
         <a href="/about-us">About Us</a>
     </footer>
     <!-- Footer -->
-    <script defer src="./main.min.js"></script>
+    <script defer src="/main.min.js"></script>
     <script defer>
 
         console.log("%c WARNING!","font-size: 5em; color: red;");
