@@ -6,12 +6,15 @@ $game = "Gun Mayhem 2";
 $long_desc = "None yet!\nHi!";
 $code = "<script defer src=\"https://unpkg.com/@ruffle-rs/ruffle@0.1.0-nightly.2023.6.3/ruffle.js\"></script>
         <div id='ruffle'></div>
-        <script>
+        <script defer>
 var h = window.innerHeight;
 var w = (h/9) * 14;
 
 
 var swfobject = {};
+window.RufflePlayer.config = {
+    autoplay: 'auto'
+};
 
 swfobject.embedSWF = function(url, cont, width, height){
     var ruffle = window.RufflePlayer.newest();
