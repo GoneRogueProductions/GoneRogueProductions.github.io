@@ -3,6 +3,10 @@
 if ($code == "" || $title == "") {
     header("Location: /");
 }
+if (isset($_GET)) {
+    header("Location: /");
+}
+$link = htmlspecialchars(preg_replace('/^(http(s)?)?:?\/*/u','http$2://',trim(strtok($_SERVER["REQUEST_URI"], '?'))), 11,'UTF-8',true);
 
 echo '
 <!DOCTYPE html>
@@ -19,6 +23,7 @@ echo '
     <meta name="MobileOptimized" content="320">
 
     <meta charset="utf-8">
+    <link rel="canonical" href="'.$link.'">
     <meta name="description"
         content="'.$description.'">
     <meta name="keywords"
