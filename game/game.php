@@ -341,7 +341,7 @@ echo '
 ';
 
 /*      if (query == "Choppy Orc") {
-            $(\'meta[name="description"]\').attr("content", "In Choppy Orc, tep into the shoes of a orc warrior in this thrilling adventure. Use your axe to get through to the final level.");
+            $(\'meta[name="description"]\').attr("content", "");
             $(".game").append("<iframe src=\'./choppy-orc/index.html\' title=\'Choppy Orc\' frameborder=\'0\' style=\'border: none;\'></iframe>");
             $(".game-container").css("aspect-ratio","16 / 9");
         }
@@ -355,23 +355,23 @@ echo '
             // ub code here
         }
         else if (query == "Geometry Dash") {
-            $(\'meta[name="description"]\').attr("content", "Prepare for a rhythmic challenge in Geometry Dash. Jump, flip, and fly through geometric obstacles.");
+            $(\'meta[name="description"]\').attr("content", "");
             $(".game").append("<iframe src=\'https://gd.gonerogue.ml\' title=\'Geometry Dash\' frameborder=\'0\' style=\'border: none;\'></iframe>");
         }
         else if (query == "Gun Mayhem 2") {
-            $(\'meta[name="description"]\').attr("content", " Unleash explosive mayhem in Gun Mayhem 2, the action-packed sequel. Arm yourself with even more weapons, navigate dynamic maps, and dominate opponents in intense multiplayer battles.");
+            $(\'meta[name="description"]\').attr("content", "");
             $(".game").append("<iframe src='./gun_mayhem_2.html' title='Geometry Dash' frameborder='0' style='border: none;'></iframe>");
         }
         else if (query == "Gun Mayhem") {
-            $('meta[name="description"]').attr("content", "Arm yourself and dominate the battlefield in Gun Mayhem, the explosive multiplayer shooter. Outgun your opponents, strategize your moves, and claim victory in the ultimate gunfight.");
+            $('meta[name="description"]').attr("content", "");
             $(".game").append("<iframe src='./gun_mayhem.html' title='Geometry Dash' frameborder='0' style='border: none;'></iframe>");
         }
         else if (query == "Learn To Fly") {
-            $('meta[name="description"]').attr("content", "You are a penguin who wants to take to the skies and fulfill your dream of flight in Learn To Fly. Upgrade your equipment, perfect your techniques, and soar to new heights in this addictive game.");
+            $('meta[name="description"]').attr("content", "");
             $(".game").append("<iframe src='./learn-to-fly.html' title='Geometry Dash' frameborder='0' style='border: none;'></iframe>");
         }
         else if (query == "Pacman") {
-            $('meta[name="description"]').attr("content", "Relive the arcade nostalgia with Pacman. Navigate the maze, eat pellets, and evade ghosts in the ultimate quest for high scores. Join Pacman and gobble up the fun!");
+            $('meta[name="description"]').attr("content", "");
             $(".game").append("<iframe src='./pacman.html' title='Geometry Dash' frameborder='0' style='border: none;'></iframe>");
         }
         else if (query == "Soccer Skills") {
