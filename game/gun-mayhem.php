@@ -6,19 +6,23 @@ $game = "Gun Mayhem";
 $long_desc = "None yet!\nHi!";
 $code = "<script defer src=\"https://unpkg.com/@ruffle-rs/ruffle@0.1.0-nightly.2023.6.3/ruffle.js\"></script>
         <div id='ruffle'></div>
-        <script>
+        <script defer>
 var h = window.innerHeight;
 var w = (h/9) * 14;
 
 
 var swfobject = {};
+window.RufflePlayer.config = {
+    \"autoplay\": \"auto\",
+    \"splashScreen\": false,
+};
 
 swfobject.embedSWF = function(url, cont, width, height){
-    var ruffle = window.RufflePlayer.newest(),
+    var ruffle = window.RufflePlayer.newest();
         player = Object.assign(document.getElementById(cont).appendChild(ruffle.createPlayer()), {
             width: width,
             height: height,
-            style: 'width: 100%; height: 100%; border-radius: var(--game-border-radius);',
+            style: 'width: 100%; height: 100%; border-radius: var(--game-border-radius);'
         });
     
     player.load({ url: url });

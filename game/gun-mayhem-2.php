@@ -13,7 +13,8 @@ var w = (h/9) * 14;
 
 var swfobject = {};
 window.RufflePlayer.config = {
-    autoplay: 'auto'
+    \"autoplay\": \"auto\",
+    \"splashScreen\": false,
 };
 
 swfobject.embedSWF = function(url, cont, width, height){
