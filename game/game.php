@@ -4,12 +4,12 @@ if ($code == "" || $title == "") {
     header("Location: /");
 }
 
-echo `
+echo '
 <!DOCTYPE html>
 <html>
 
 <head>
-    <title>`.$title.`</title>
+    <title>'.$title.'</title>
 
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="white">
@@ -20,7 +20,7 @@ echo `
 
     <meta charset="utf-8">
     <meta name="description"
-        content="`.$description.`">
+        content="'.$description.'">
     <meta name="keywords"
         content="gonerogue, gonerogue games, gonerogue productions, games, unblocked, unblocked games 79, unblocked games, 2048, minecraft, run, run 3, car drawing, table tanks, duck life, duck life 4, gun mayhem, gun mayhem 2, pizzeria, bitlife, pacman, flappy bird, cookie clicker, edge surf, motox3m, motox3m2, soccer skills, soccer skills euro cup">
     <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
@@ -28,17 +28,17 @@ echo `
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta itemprop="name" content="GoneRogue Games">
     <meta itemprop="description"
-        content="`.$description.`">
+        content="'.$description.'">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Social Media -->
     <meta name="og:description"
-        content="`.$description.` Play in your browser.">
+        content="'.$description.' Play in your browser.">
     <meta name="og:title" content="GoneRogue Games: the no-ads fullscreen games site">
     <meta name="og:type" content="website">
     <meta name="og:image" content="/social.png">
     <meta name="og:url" content="https://gonerogue.ml">
-    <meta name="og:image:alt" content="GoneRogue's social cover, showing some of our games">
+    <meta name="og:image:alt" content="GoneRogue\'s social cover, showing some of our games">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
@@ -74,7 +74,7 @@ echo `
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "`.$game.`"
+            "name": "'.$game.'"
           },
           ]
         }
@@ -109,14 +109,14 @@ echo `
                     <li><a href="#">Duck Life (v1)</a> <a href="#">(v2)</a> <a href="#">(v3)</a> <a href="#">(v4)</a>
                     </li>
                     <li><a href="#">Gun Mayhem (v1)</a> <a href="#">(v2)</a></li>
-                    <li><a href="#">Papa's Pizzeria</a></li>
+                    <li><a href="#">Papa\'s Pizzeria</a></li>
                     <li><a href="#">BitLife</a></li>
                     <li><a href="#">Pacman</a></li>
                     <li><a href="#">Flappy Bird</a></li>
                     <li><a href="#">Cookie Clicker</a></li>
                     <li><a href="#">Edge Surf</a></li>
                     <li><a href="#">MotoX3M</a></li>
-                    <li><a href="#">Soccer Skills (Euro Cup '21)</a></li>
+                    <li><a href="#">Soccer Skills (Euro Cup \'21)</a></li>
                     <li><a href="#">Choppy Orc</a></li>
                 </ul>
             </div>
@@ -155,7 +155,7 @@ echo `
         }
         .loader::after,
         .loader::before {
-            content: '';  
+            content: \'\';  
             box-sizing: border-box;
             width: 48px;
             height: 48px;
@@ -226,15 +226,15 @@ echo `
         }
     </style>
     <div class="container">
-        <h1 id="title">`.$game.`</h1>
-        <p id="description">Play `.$game.` on GoneRogue.</p>
+        <h1 id="title">'.$game.'</h1>
+        <p id="description">Play '.$game.' on GoneRogue.</p>
         <div class="game-container" id="game-container">
             <div class="loading-indicator">
                 <span class="loader"></span>
                 <span style="margin-top: 25px; color: white;">Loading your gаme...</span>
             </div>
             <div class="game">
-                `.$code.`
+                '.$code.'
             </div>
             <button class="full-screen" onclick="fullScreen()">
                 <i class="fa-solid fa-expand"></i>
@@ -242,7 +242,7 @@ echo `
         </div>
         <div class="description">
             <h5>DESCRIPTION</h5>
-            <p>`.nl2br($long_desc).`</p>
+            <p>'.nl2br($long_desc).'</p>
         </div>
     </div>
 
@@ -264,7 +264,7 @@ echo `
                         </h6>
                         <p>
                             <em>Hello from the other sideeeeeee......</em><br>
-                            Welcome to the bottom of the page. There are some links in the bottom left that you might like to read. Have a great time! (P.S: we're still working on requesting gаmes.)
+                            Welcome to the bottom of the page. There are some links in the bottom left that you might like to read. Have a great time! (P.S: we\'re still working on requesting gаmes.)
                         </p>
                     </div>
                     </div>
@@ -286,47 +286,6 @@ echo `
         console.log("%c Do not paste ANYTHING inside here. They could steal your account, and furthermore, blacklisted modifications (aka cheats) are NOT ALLOWED. Using them may get you a ban from this website. Proceed cautiously!", "font-size: large;");
         let elem = document.getElementById("game-container");
         let inFS = false;
-        /* if (query == "Choppy Orc") {
-            $('meta[name="description"]').attr("content", "In Choppy Orc, tep into the shoes of a orc warrior in this thrilling adventure. Use your axe to get through to the final level.");
-            $(".game").append("<iframe src='./choppy-orc/index.html' title='Choppy Orc' frameborder='0' style='border: none;'></iframe>");
-            $(".game-container").css("aspect-ratio","16 / 9");
-        }
-        else if (query == "Slope") {
-            $('meta[name="description"]').attr("content", "");
-            $(".game").append("");
-            // $(".game-container").css("aspect-ratio", "16 / 9");
-        }
-        else if (query == "Run") {
-            $('meta[name="description"]').attr("content", "Can you run to the end? In Run, dodge obstacles, collect power-ups, and go the distance.");
-            // ub code here
-        }
-        else if (query == "Geometry Dash") {
-            $('meta[name="description"]').attr("content", "Prepare for a rhythmic challenge in Geometry Dash. Jump, flip, and fly through geometric obstacles.");
-            $(".game").append("<iframe src='https://gd.gonerogue.ml' title='Geometry Dash' frameborder='0' style='border: none;'></iframe>");
-        }
-        else if (query == "Gun Mayhem 2") {
-            $('meta[name="description"]').attr("content", " Unleash explosive mayhem in Gun Mayhem 2, the action-packed sequel. Arm yourself with even more weapons, navigate dynamic maps, and dominate opponents in intense multiplayer battles.");
-            $(".game").append("<iframe src='./gun_mayhem_2.html' title='Geometry Dash' frameborder='0' style='border: none;'></iframe>");
-        }
-        else if (query == "Gun Mayhem") {
-            $('meta[name="description"]').attr("content", "Arm yourself and dominate the battlefield in Gun Mayhem, the explosive multiplayer shooter. Outgun your opponents, strategize your moves, and claim victory in the ultimate gunfight.");
-            $(".game").append("<iframe src='./gun_mayhem.html' title='Geometry Dash' frameborder='0' style='border: none;'></iframe>");
-        }
-        else if (query == "Learn To Fly") {
-            $('meta[name="description"]').attr("content", "You are a penguin who wants to take to the skies and fulfill your dream of flight in Learn To Fly. Upgrade your equipment, perfect your techniques, and soar to new heights in this addictive game.");
-            $(".game").append("<iframe src='./learn-to-fly.html' title='Geometry Dash' frameborder='0' style='border: none;'></iframe>");
-        }
-        else if (query == "Pacman") {
-            $('meta[name="description"]').attr("content", "Relive the arcade nostalgia with Pacman. Navigate the maze, eat pellets, and evade ghosts in the ultimate quest for high scores. Join Pacman and gobble up the fun!");
-            $(".game").append("<iframe src='./pacman.html' title='Geometry Dash' frameborder='0' style='border: none;'></iframe>");
-        }
-        else if (query == "Soccer Skills") {
-            $('meta[name="description"]').attr("content", "Showcase your finesse and precision in Soccer Skills, the exciting soccer game. Dribble, pass, and score goals with expert technique to become a soccer legend.");
-            $(".game").append("<iframe src='./soccer.html' title='Geometry Dash' frameborder='0' style='border: none;'></iframe>");
-        }
-        else {
-            $('meta[name="description"]').attr("content", "Embark on an unforgettable gaming adventure at GoneRogue. Immerse yourself in a captivating and ad-free gaming experience with our collection of exciting and diverse games.");
-        } */
         /* else {
             window.location.href = "/";
         } */
@@ -353,7 +312,7 @@ echo `
                 } else if (elem.msRequestFullscreen) { /* IE11 */
                     elem.msRequestFullscreen();
                 }
-                $(".full-screen").html('<i class="fa-solid fa-compress"></i>');
+                $(".full-screen").html(\'<i class="fa-solid fa-compress"></i>\');
                 $("html").css("--game-border-radius", "0");
             } else {
                 console.log("hi1");
@@ -367,7 +326,7 @@ echo `
                     document.msExitFullscreen();
                 }
                 
-                $(".full-screen").html('<i class="fa-solid fa-expand"></i>');
+                $(".full-screen").html(\'<i class="fa-solid fa-expand"></i>\');
                 $("html").css("--game-border-radius", "1rem");
                 inFS = false;
             }
@@ -379,6 +338,49 @@ echo `
 
 </html>
 
-`;
+';
+
+/*      if (query == "Choppy Orc") {
+            $(\'meta[name="description"]\').attr("content", "In Choppy Orc, tep into the shoes of a orc warrior in this thrilling adventure. Use your axe to get through to the final level.");
+            $(".game").append("<iframe src=\'./choppy-orc/index.html\' title=\'Choppy Orc\' frameborder=\'0\' style=\'border: none;\'></iframe>");
+            $(".game-container").css("aspect-ratio","16 / 9");
+        }
+        else if (query == "Slope") {
+            $(\'meta[name="description"]\').attr("content", "");
+            $(".game").append("");
+            // $(".game-container").css("aspect-ratio", "16 / 9");
+        }
+        else if (query == "Run") {
+            $(\'meta[name="description"]\').attr("content", "Can you run to the end? In Run, dodge obstacles, collect power-ups, and go the distance.");
+            // ub code here
+        }
+        else if (query == "Geometry Dash") {
+            $(\'meta[name="description"]\').attr("content", "Prepare for a rhythmic challenge in Geometry Dash. Jump, flip, and fly through geometric obstacles.");
+            $(".game").append("<iframe src=\'https://gd.gonerogue.ml\' title=\'Geometry Dash\' frameborder=\'0\' style=\'border: none;\'></iframe>");
+        }
+        else if (query == "Gun Mayhem 2") {
+            $(\'meta[name="description"]\').attr("content", " Unleash explosive mayhem in Gun Mayhem 2, the action-packed sequel. Arm yourself with even more weapons, navigate dynamic maps, and dominate opponents in intense multiplayer battles.");
+            $(".game").append("<iframe src='./gun_mayhem_2.html' title='Geometry Dash' frameborder='0' style='border: none;'></iframe>");
+        }
+        else if (query == "Gun Mayhem") {
+            $('meta[name="description"]').attr("content", "Arm yourself and dominate the battlefield in Gun Mayhem, the explosive multiplayer shooter. Outgun your opponents, strategize your moves, and claim victory in the ultimate gunfight.");
+            $(".game").append("<iframe src='./gun_mayhem.html' title='Geometry Dash' frameborder='0' style='border: none;'></iframe>");
+        }
+        else if (query == "Learn To Fly") {
+            $('meta[name="description"]').attr("content", "You are a penguin who wants to take to the skies and fulfill your dream of flight in Learn To Fly. Upgrade your equipment, perfect your techniques, and soar to new heights in this addictive game.");
+            $(".game").append("<iframe src='./learn-to-fly.html' title='Geometry Dash' frameborder='0' style='border: none;'></iframe>");
+        }
+        else if (query == "Pacman") {
+            $('meta[name="description"]').attr("content", "Relive the arcade nostalgia with Pacman. Navigate the maze, eat pellets, and evade ghosts in the ultimate quest for high scores. Join Pacman and gobble up the fun!");
+            $(".game").append("<iframe src='./pacman.html' title='Geometry Dash' frameborder='0' style='border: none;'></iframe>");
+        }
+        else if (query == "Soccer Skills") {
+            $('meta[name="description"]').attr("content", "Showcase your finesse and precision in Soccer Skills, the exciting soccer game. Dribble, pass, and score goals with expert technique to become a soccer legend.");
+            $(".game").append("<iframe src='./soccer.html' title='Geometry Dash' frameborder='0' style='border: none;'></iframe>");
+        }
+        else {
+            $('meta[name="description"]').attr("content", "Embark on an unforgettable gaming adventure at GoneRogue. Immerse yourself in a captivating and ad-free gaming experience with our collection of exciting and diverse games.");
+        } 
+*/
 
 ?>
