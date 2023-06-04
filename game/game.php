@@ -3,7 +3,7 @@
 if ($code == "" || $title == "") {
     header("Location: /");
 }
-$link = htmlspecialchars(preg_replace('/^(http(s)?)?:?\/*/u','http$2://',trim(strtok($_SERVER["REQUEST_URI"], '?'))), 11,'UTF-8',true);
+$link = htmlspecialchars(preg_replace('/^(http(s)?)?:?\/*/u','',trim(strtok($_SERVER["REQUEST_URI"], '?'))), 11,'UTF-8',true);
 
 echo '
 <!DOCTYPE html>
