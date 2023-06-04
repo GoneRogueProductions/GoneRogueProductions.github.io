@@ -20,7 +20,7 @@ echo '
     <meta name="MobileOptimized" content="320">
 
     <meta charset="utf-8">
-    <link rel="canonical" href="'.$link.'">
+    <link rel="canonical" href="https://gonerogue.ml/'.$link.'">
     <meta name="description"
         content="'.$description.'">
     <meta name="keywords"
