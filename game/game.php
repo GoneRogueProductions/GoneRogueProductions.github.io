@@ -3,9 +3,6 @@
 if ($code == "" || $title == "") {
     header("Location: /");
 }
-if (isset($_GET)) {
-    header("Location: /");
-}
 $link = htmlspecialchars(preg_replace('/^(http(s)?)?:?\/*/u','http$2://',trim(strtok($_SERVER["REQUEST_URI"], '?'))), 11,'UTF-8',true);
 
 echo '
