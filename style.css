@@ -41,7 +41,7 @@ body,div,h1,h2,h3,h4,h5,h6,a,p,b,em {
 .navbar h2 {
     margin-bottom: 0!important;
 }
-.navbar img {
+.navbar h2 img {
     height: 50px!important;
 }
 
