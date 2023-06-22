@@ -35,12 +35,11 @@ $t048 = "https://2048.gonerogue.ml/";
 
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="white">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4739296020319725"
-        crossorigin="anonymous"></script>
+    
     <link rel="canonical" href="https://gonerogue.ml/" />
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
-    <script src="/lazysizes.min.js" async></script>
+    
 
     <meta charset="utf-8">
     <meta name="description"
@@ -77,12 +76,10 @@ $t048 = "https://2048.gonerogue.ml/";
     <meta name="application-name" content="GoneRogue">
     <meta name="msapplication-TileColor" content="#ffc40d">
     <meta name="theme-color" content="#ffffff">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
-    <script defer src="./fontawesome.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./style.min.css">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"></noscript>
+    <link rel="preload" href="style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="style.min.css"></noscript>
 </head>
 
 <body id="darkTog">
@@ -531,6 +528,12 @@ $t048 = "https://2048.gonerogue.ml/";
     </footer>
     <!-- Footer -->
     <script defer src="./main.min.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4739296020319725"
+        crossorigin="anonymous"></script>
+        <script src="/lazysizes.min.js" async></script>
+        <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+    <script defer src="./fontawesome.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
