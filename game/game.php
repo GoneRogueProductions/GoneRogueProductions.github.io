@@ -7,7 +7,7 @@ $link = htmlspecialchars(preg_replace('/^(http(s)?)?:?\/*/u','',trim(strtok($_SE
 
 echo '
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>'.$title.'</title>
