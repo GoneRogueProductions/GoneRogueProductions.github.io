@@ -55,12 +55,14 @@ echo '
     <meta name="application-name" content="GoneRogue">
     <meta name="msapplication-TileColor" content="#ffc40d">
     <meta name="theme-color" content="#ffffff">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preload" href="/bootstrap.min.css" as="style" onload="this.onload=null;this.rel=\'stylesheet\'">
+    <noscript><link rel="stylesheet" href="/bootstrap.min.css"></noscript>
+    <link rel="preload" href="style.min.css" as="style" onload="this.onload=null;this.rel=\'stylesheet\'">
+    <noscript><link rel="stylesheet" href="style.min.css"></noscript>
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
     <script defer src="/fontawesome.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/style.min.css">
+   
 
     <script type="application/ld+json">
         {
