@@ -27,7 +27,7 @@ body,div,h1,h2,h3,h4,h5,h6,a,p,b,em {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 25px;
+    padding: 20px;
     margin: 0;
     background: white;
     border-bottom: 1px solid lightgray;
@@ -37,6 +37,12 @@ body,div,h1,h2,h3,h4,h5,h6,a,p,b,em {
     z-index: 99999;
     align-items: center;
     gap: 20px;
+}
+.navbar h2 {
+    margin-bottom: 0!important;
+}
+.navbar img {
+    height: 50px!important;
 }
 
 .search-input {
