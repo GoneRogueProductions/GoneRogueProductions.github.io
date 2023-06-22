@@ -239,7 +239,7 @@ echo '
             <div class="game">
                 '.$code.'
             </div>
-            <button class="full-screen" onclick="fullScreen()">
+            <button class="full-screen" aria-label="Enter fullscreen" onclick="fullScreen()">
                 <i class="fa-solid fa-expand"></i>
             </button>
         </div>
