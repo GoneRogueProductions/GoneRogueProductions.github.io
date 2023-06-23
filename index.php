@@ -95,7 +95,7 @@ $t048 = "https://2048.gonerogue.ml/";
 <body id="darkTog">
     <!---->
     <div class="navbar" style="padding: 20px!important;" id="darkTog1">
-        <h2 onclick="window.location.href='/'" style="cursor: url(https://cdn.custom-cursor.com/db/4827/32/arrow2747.png)   , pointer !important;; font-size: 2em; margin-bottom: 0;"><img
+        <h2 onclick="window.location.href='/'" style="cursor: url(https://cdn.custom-cursor.com/db/4827/32/arrow2747.png)   , pointer !important; font-size: 2em; margin-bottom: 0;"><img
                 src="https://gonerogue.ml/apple-touch-icon.png" style="border-radius: 10px; height: 50px;"
                 class="lazyload" alt="GoneRogue Favicon"> Gаmes</h2>
         <div class="right-cont">
