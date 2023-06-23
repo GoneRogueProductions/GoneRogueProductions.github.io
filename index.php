@@ -129,13 +129,12 @@ $t048 = "https://2048.gonerogue.ml/";
         </div>
     </div>
     <div class="container">
-        <div class="mobile">
+        <!--<div class="mobile">
             <h2>You are on mobile. Many gаmes won't work.</h2>
-        </div>
+        </div>-->
         <div class="title">
             <h1><i class="fa-duotone fa-rocket-launch" style="color: red; text-align: left;"></i> Welcome to GoneRogue
                 Gаmes!</h1>
-            <h2>Big changes coming - games will have a new landing page. Watch out for changes!</h2>
         </div>
         <em>Browse our collection below. All of our gаmes are in fullscreen.</em>
         <hr>
