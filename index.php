@@ -63,7 +63,7 @@ $t048 = "https://2048.gonerogue.ml/";
     <meta name="og:image:alt" content="GoneRogue's social cover, showing some of our games">
 
     <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
+    <metgia name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="/social.png">
 
     
