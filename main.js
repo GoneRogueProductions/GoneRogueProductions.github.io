@@ -4,7 +4,7 @@ let context = false;
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
     let theme = false;
 }
-$(document).on("keypress", function(e) {
+$(document).keypress(function(e) {
     if (e.which == 191) {
         if (context == false) {
             $("#searchBox").focus();
@@ -15,7 +15,7 @@ $(document).on("keypress", function(e) {
             showContext();
         }
     }
-})
+});
 
 function switchTheme() {
     if (theme === true) {
