@@ -78,11 +78,12 @@ $t048 = "https://2048.gonerogue.ml/";
     <meta name="theme-color" content="#ffffff">
     <link rel="preload" href="/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/bootstrap.min.css"></noscript>
-    <link rel="preload" href="style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="style.min.css"></noscript>
+    <!--<link rel="preload" href="style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">-->
+    <link rel="stylesheet" href="style.min.css">
 </head>
 
 <body id="darkTog">
+    <!---->
     <div class="navbar" id="darkTog1">
         <h2 onclick="window.location.href='/'" style="cursor: pointer; font-size: 2em;"><img
                 src="https://gonerogue.ml/apple-touch-icon.png" style="border-radius: 10px; height: 75px;"
