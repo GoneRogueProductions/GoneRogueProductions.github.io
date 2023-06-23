@@ -28,7 +28,7 @@ $t048 = "https://2048.gonerogue.ml/";
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>GoneRogue Games: the fullscreen unblocked games site</title>

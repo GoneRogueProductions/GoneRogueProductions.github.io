@@ -7,7 +7,7 @@ $link = htmlspecialchars(preg_replace('/^(http(s)?)?:?\/*/u','',trim(strtok($_SE
 
 echo '
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>'.$title.'</title>
@@ -57,8 +57,8 @@ echo '
     <meta name="theme-color" content="#ffffff">
     <link rel="preload" href="/bootstrap.min.css" as="style" onload="this.onload=null;this.rel=\'stylesheet\'">
     <noscript><link rel="stylesheet" href="/bootstrap.min.css"></noscript>
-    <link rel="preload" href="style.min.css" as="style" onload="this.onload=null;this.rel=\'stylesheet\'">
-    <noscript><link rel="stylesheet" href="style.min.css"></noscript>
+    <link rel="preload" href="/style.min.css" as="style" onload="this.onload=null;this.rel=\'stylesheet\'">
+    <noscript><link rel="stylesheet" href="/style.min.css"></noscript>
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
     <script defer src="/fontawesome.js" crossorigin="anonymous"></script>
@@ -239,7 +239,7 @@ echo '
             <div class="game">
                 '.$code.'
             </div>
-            <button class="full-screen" onclick="fullScreen()">
+            <button class="full-screen" aria-label="Enter fullscreen" onclick="fullScreen()">
                 <i class="fa-solid fa-expand"></i>
             </button>
         </div>
