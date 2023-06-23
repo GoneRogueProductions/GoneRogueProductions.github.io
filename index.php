@@ -31,6 +31,15 @@ $t048 = "https://2048.gonerogue.ml/";
 <html lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4WR46690Y7"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-4WR46690Y7');
+    </script>
     <title>GoneRogue Games: the fullscreen unblocked games site</title>
 
     <meta name="apple-mobile-web-app-capable" content="yes">
