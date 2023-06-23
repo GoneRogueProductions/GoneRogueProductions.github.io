@@ -61,12 +61,11 @@ $t048 = "https://2048.gonerogue.ml/";
     <meta name="og:image" content="/social.png">
     <meta name="og:url" content="https://gonerogue.ml">
     <meta name="og:image:alt" content="GoneRogue's social cover, showing some of our games">
-
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="/social.png">
 
-
+    
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -76,13 +75,14 @@ $t048 = "https://2048.gonerogue.ml/";
     <meta name="application-name" content="GoneRogue">
     <meta name="msapplication-TileColor" content="#ffc40d">
     <meta name="theme-color" content="#ffffff">
-    <link rel="preload" href="/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="/bootstrap.min.css"></noscript>
-    <link rel="preload" href="style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="style.min.css"></noscript>
+    <!--<link rel="preload" href="/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">-->
+    <link rel="stylesheet" href="/bootstrap.min.css">
+    <!--<link rel="preload" href="style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">-->
+    <link rel="stylesheet" href="style.min.css">
 </head>
 
 <body id="darkTog">
+    <!---->
     <div class="navbar" id="darkTog1">
         <h2 onclick="window.location.href='/'" style="cursor: pointer; font-size: 2em;"><img
                 src="https://gonerogue.ml/apple-touch-icon.png" style="border-radius: 10px; height: 75px;"
@@ -528,7 +528,7 @@ $t048 = "https://2048.gonerogue.ml/";
     </footer>
     <!-- Footer -->
     <script defer src="./main.min.js"></script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4739296020319725"
+    <script defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4739296020319725"
         crossorigin="anonymous"></script>
         <script src="/lazysizes.min.js" async></script>
         <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
