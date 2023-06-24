@@ -1,6 +1,6 @@
 <?php
 
-$run = "https://gc.gonerogue.ml/cdn/html5/run3/";
+$run = "/game/run-3";
 $slope = "/game/slope";
 $gd = "/game/geometry-dash";
 $ltf = "/game/learn-to-fly";
