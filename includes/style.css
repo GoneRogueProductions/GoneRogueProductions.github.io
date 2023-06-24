@@ -1,0 +1,231 @@
+:root {
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: inset 0 1px 4px 0 rgba(0,0,0,.05);
+}
+html {
+    cursor: url(https://cdn.custom-cursor.com/db/4828/32/arrow2747.png), default;
+}
+button, a {
+    cursor: url(https://cdn.custom-cursor.com/db/4827/32/arrow2747.png)   , pointer !important;
+}
+@font-face {
+    font-family: Optimistic;
+    src: url(./Optimistic_Display_W_Md.woff2);
+    font-weight: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: Optimistic;
+    src: url(./Optimistic_Display_W_Bd.woff2);
+    font-weight: bold;
+    font-display: swap;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+body,div,h1,h2,h3,h4,h5,h6,a,p,b,em {
+    font-family: Optimistic,-apple-system,ui-sans-serif,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+    background: white;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    z-index: 99999;
+    align-items: center;
+    gap: 20px;
+}
+.navbar h2 {
+    margin-bottom: 0!important;
+}
+.navbar h2 img {
+    height: 50px!important;
+}
+
+.search-input {
+    background: transparent;
+    outline: none;
+    color: black;
+    box-shadow: none;
+    border: 0;
+    padding: 5px;
+    padding-left: 10px;
+}
+.search-icon {
+    padding: 5px;
+    border-right: 1px solid lightgray;
+    padding-right: 10px;
+}
+.container {
+    text-align: center;
+    margin-top: 150px;
+}
+.catalog {
+    display: grid;
+    gap: 10px;
+    grid-auto-flow: row;
+    grid-template-columns: auto auto auto;
+    margin-top: 10px;
+}
+@media (max-width: 768px) {
+    .catalog {
+        grid-template-columns: auto auto;
+   }
+}
+@media (max-width: 500px) {
+    .catalog {
+        grid-template-columns: auto;
+   }
+    .mobile {
+        display:inline-block!important;
+   }
+}
+.catalog div {
+    background: white;
+    border: 1px solid lightgray;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.1s;
+}
+/* .catalog div:hover {
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.12), 0 9px 25px 0 rgba(0, 0, 0, 0.1);
+}
+.catalog div:active {
+    box-shadow: none;
+}
+*/
+.catalog div img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px 25px 0 0;
+}
+.catalog div section {
+    text-align: left;
+    padding: 25px;
+}
+.catalog div section span {
+    color: darkgray;
+    display: block;
+}
+@media (max-width: 600px) {
+    .navbar {
+        justify-content: center;
+   }
+}
+.tray {
+    justify-content: space-between;
+    display: flex;
+}
+.catalog div section tray aside a {
+    text-decoration: none;
+}
+.mobile {
+    display: none;
+}
+.note {
+    background: rgb(255, 238, 0);
+    border-left: 10px solid yellow;
+    color: black!important;
+    padding: 10px;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+* {
+    transition: 0.4s;
+}
+#gamesList {
+    position: absolute;
+    list-style-type: none;
+    background: rgb(238, 238, 238);
+    border-radius: 0 0 10px 10px;
+    width: 264px;
+    padding: 10px;
+    display: none;
+}
+#gamesList li a {
+    transition: 0.2s;
+    text-decoration: none;
+}
+#gamesList li a:hover {
+    filter: brightness(0.8);
+    text-decoration: underline;
+}
+#gamesList li {
+    margin-bottom: 10px;
+}
+@media (prefers-color-scheme: dark) {
+    body {
+        background: rgb(35,39,47);
+        color: rgb(235, 236, 240);
+   }
+    div.search, ul#gamesList {
+        background: rgb(52, 58, 70, 0.9);
+        border: 0;
+   }
+    .search input, ul#gamesList {
+        color: rgb(235, 236, 240);
+   }
+    .catalog div, .navbar {
+        background: rgb(35,39,47);
+   }
+    footer.text-muted, footer.bg-light {
+        background-color: rgb(59, 66, 79);
+        color: rgb(235, 236, 240);
+   }
+   #gamesList li a {
+       color: white;
+   }
+}
+.search {
+    background: rgb(238, 238, 238);
+    display: flex;
+    padding: 10px;
+    box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    align-items: center;
+    width: 264px;
+}
+
+
+.right-cont {
+    display: flex;
+    gap: 20px;
+}
+.b-dark {
+    display: flex;
+}
+.b-light {
+    display: none;
+}
+@media (prefers-color-scheme: dark) {
+    div.b-dark {
+        display: none;
+   }
+    div.b-light {
+        display: flex;
+   }
+}
+.b-dark, .b-light {
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: url(https://cdn.custom-cursor.com/db/4827/32/arrow2747.png)   , pointer !important;
+    transition: 0s;
+}
+svg {
+    transition: 0s;
+}
+span,p,aside,h2,h1,h3{
+    transition: 0s;
+}
