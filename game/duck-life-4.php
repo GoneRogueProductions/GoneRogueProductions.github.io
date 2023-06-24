@@ -1,10 +1,10 @@
 <?php
 
-$title = "Play Learn To Fly on GoneRogue";
-$description = "You are a penguin who wants to take to the skies and fulfill your dream of flight in Learn To Fly. Upgrade your equipment, perfect your techniques, and soar to new heights in this addictive game.";
-$game = "Learn To Fly";
+$title = "Play Duck Life 4 on GoneRogue";
+$description = "Hatch your very own duck and tain it to be MASTER DUCK in Duck Life 4! Do training and race against other ducks to prepare yourself for the competition.";
+$game = "Duck Life 4";
 $long_desc = "None yet!\nHi!";
-$code = "<script defer src=\"https://unpkg.com/@ruffle-rs/ruffle@0.1.0-nightly.2023.6.3/ruffle.js\"></script>
+$code = "<style>.game-container {aspect-ratio:14/9!important;}</style><script defer src=\"https://unpkg.com/@ruffle-rs/ruffle@0.1.0-nightly.2023.6.3/ruffle.js\"></script>
         <div id='ruffle'></div>
         <script defer>
 var h = window.innerHeight;
