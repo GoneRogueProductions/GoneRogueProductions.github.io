@@ -24,7 +24,7 @@ $x3m = "/game/motox3m2";
 $ss = "/game/soccer-skills";
 $co = "/game/choppy-orc";
 $t048 = "https://2048.gonerogue.ml/"; 
-$hw = "";
+$hw = "/game/happy-wheels";
 
 ?>
 
