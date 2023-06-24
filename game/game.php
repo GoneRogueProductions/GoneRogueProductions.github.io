@@ -71,7 +71,7 @@ echo '
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
     <script defer src="/fontawesome.js" crossorigin="anonymous"></script>
-   
+    <link rel="preload" fetchpriority="high" as="image" href="/apple-touch-icon.png" type="image/png">
 
     <script type="application/ld+json">
         {
@@ -95,7 +95,7 @@ echo '
 
 <body id="darkTog">
     <div class="navbar" id="darkTog1">
-        <h2 onclick="window.location.href=\'/\'" style="cursor: url(https://cdn.custom-cursor.com/db/4827/32/arrow2747.png)   , pointer !important; font-size: 2em;"><img src="https://gonerogue.ml/apple-touch-icon.png" style="border-radius: 10px; height: 75px;"
+        <h2 onclick="window.location.href=\'/\'" style="cursor: url(https://cdn.custom-cursor.com/db/4827/32/arrow2747.png)   , pointer !important; font-size: 2em;"><img src="/apple-touch-icon.png" style="border-radius: 10px; height: 75px;"
                 alt="GoneRogue Favicon"> Gаmes</h2>
         <div class="right-cont">
             <div class="b-dark" id="b-dark" onclick="switchTheme();">

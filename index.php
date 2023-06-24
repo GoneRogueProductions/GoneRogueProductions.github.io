@@ -89,6 +89,10 @@ $t048 = "https://2048.gonerogue.ml/";
     <!--<link rel="preload" href="style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">-->
     <!--<link rel="stylesheet" href="style.min.css">-->
     <!--style.css-->
+    <link rel="preload" fetchpriority="high" as="image" href="https://ik.imagekit.io/gonerogue/images/run3.png" type="image/webp">
+    <link rel="preload" fetchpriority="high" as="image" href="https://ik.imagekit.io/gonerogue/images/slope.png" type="image/webp">
+    <link rel="preload" fetchpriority="high" as="image" href="https://ik.imagekit.io/gonerogue/images/gd.jpg" type="image/webp">
+    <link rel="preload" fetchpriority="high" as="image" href="/apple-touch-icon.png" type="image/png">
     <style>#gamesList li a,.catalog div section tray aside a{text-decoration:none}:root{--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:inset 0 1px 4px 0 rgba(0,0,0,.05)}html{cursor:url(https://cdn.custom-cursor.com/db/4828/32/arrow2747.png),default}.b-dark,.b-light,a,button{cursor:url(https://cdn.custom-cursor.com/db/4827/32/arrow2747.png),pointer!important}@font-face{font-family:Optimistic;src:url(./Optimistic_Display_W_Md.woff2);font-weight:400;font-display:swap}@font-face{font-family:Optimistic;src:url(./Optimistic_Display_W_Bd.woff2);font-weight:700;font-display:swap}body,html{height:100%;width:100%}a,b,body,div,em,h1,h2,h3,h4,h5,h6,p{font-family:Optimistic,-apple-system,ui-sans-serif,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji}.navbar{position:fixed;top:0;left:0;width:100%;padding:20px;margin:0 0 25px;background:#fff;border-bottom:1px solid #d3d3d3;display:flex;justify-content:space-between;z-index:99999;align-items:center;gap:20px}.navbar h2{margin-bottom:0!important}.navbar h2 img{height:50px!important}.search-input{background:0 0;outline:0;color:#000;box-shadow:none;border:0;padding:5px 5px 5px 10px}.search-icon{padding:5px 10px 5px 5px;border-right:1px solid #d3d3d3}.container{text-align:center;margin-top:150px}.catalog{display:grid;gap:10px;grid-auto-flow:row;grid-template-columns:auto auto auto;margin-top:10px}@media (max-width:768px){.catalog{grid-template-columns:auto auto}}@media (max-width:500px){.catalog{grid-template-columns:auto}.mobile{display:inline-block!important}}.catalog div{background:#fff;border:1px solid #d3d3d3;border-radius:25px;display:flex;flex-direction:column;transition:.1s}.catalog div img{width:100%;object-fit:cover;border-radius:25px 25px 0 0}.catalog div section{text-align:left;padding:25px}.catalog div section span{color:#a9a9a9;display:block}@media (max-width:600px){.navbar{justify-content:center}}.tray{justify-content:space-between;display:flex}#gamesList,.b-light,.mobile{display:none}.b-dark,.right-cont,.search{display:flex}.note{background:#fe0;border-left:10px solid #ff0;color:#000!important;padding:10px 10px 10px 20px;border-radius:10px}#gamesList,.search{padding:10px;width:264px}*{transition:.4s}#gamesList{position:absolute;list-style-type:none;background:#eee;border-radius:0 0 10px 10px}#gamesList li a{transition:.2s}#gamesList li a:hover{filter:brightness(.8);text-decoration:underline}#gamesList li{margin-bottom:10px}.search{background:#eee;box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);border-radius:10px;border:1px solid #d3d3d3;align-items:center}.right-cont{gap:20px}@media (prefers-color-scheme:dark){.search input,body,ul#gamesList{color:#ebecf0}.catalog div,.navbar,body{background:#23272f}div.search,ul#gamesList{background:rgb(52,58,70,.9);border:0}footer.bg-light,footer.text-muted{background-color:#3b424f;color:#ebecf0}#gamesList li a{color:#fff}div.b-dark{display:none}div.b-light{display:flex}}.b-dark,.b-light{justify-content:center;align-items:center;font-size:2em;transition:none}aside,h1,h2,h3,p,span,svg{transition:none}</style>
 </head>
 
@@ -96,8 +100,8 @@ $t048 = "https://2048.gonerogue.ml/";
     <!---->
     <div class="navbar" style="padding: 20px!important;" id="darkTog1">
         <h2 onclick="window.location.href='/'" style="cursor: url(https://cdn.custom-cursor.com/db/4827/32/arrow2747.png)   , pointer !important; font-size: 2em; margin-bottom: 0;"><img
-                src="https://gonerogue.ml/apple-touch-icon.png" style="border-radius: 10px; height: 50px;"
-                class="lazyload" alt="GoneRogue Favicon"> Gаmes</h2>
+                src="/apple-touch-icon.png" style="border-radius: 10px; height: 50px;"
+                alt="GoneRogue Favicon"> Gаmes</h2>
         <div class="right-cont">
             <div class="b-dark" id="b-dark" onclick="switchTheme();">
                 <i class="fa-solid fa-moon"></i>
@@ -152,7 +156,7 @@ $t048 = "https://2048.gonerogue.ml/";
         <div class="catalog" id="catalog">
 
             <div>
-                <img data-src="https://ik.imagekit.io/gonerogue/images/run3.png" class="lazyload" alt="Run 3 Gameplay">
+                <img src="https://ik.imagekit.io/gonerogue/images/run3.png" alt="Run 3 Gameplay">
                 <section>
                     <tray class="tray">
                         <b>Run</b>
@@ -170,7 +174,7 @@ $t048 = "https://2048.gonerogue.ml/";
             </div>
 
             <div>
-                <img data-src="https://ik.imagekit.io/gonerogue/images/slope.png" class="lazyload" alt="Slope Gameplay">
+                <img src="https://ik.imagekit.io/gonerogue/images/slope.png" alt="Slope Gameplay">
                 <section>
                     <tray class="tray">
                         <b>Slope</b>
@@ -188,7 +192,7 @@ $t048 = "https://2048.gonerogue.ml/";
             </div>
 
             <div>
-                <img data-src="https://ik.imagekit.io/gonerogue/images/gd.jpg" class="lazyload" alt="Geometry Dash Showcase">
+                <img src="https://ik.imagekit.io/gonerogue/images/gd.jpg" alt="Geometry Dash Showcase">
                 <section>
                     <tray class="tray">
                         <b>Geometry Dаsh (Scrаtch Edition)</b>
