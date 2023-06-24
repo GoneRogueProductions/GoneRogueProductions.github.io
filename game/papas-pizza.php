@@ -1,7 +1,7 @@
 <?php
 
-$title = "Play Pacman on GoneRogue";
-$description = "Relive the arcade nostalgia with Pacman. Navigate the maze, eat pellets, and evade ghosts in the ultimate quest for high scores. Join Pacman and gobble up the fun!";
+$title = "Play Papa's Pizzeria on GoneRogue";
+$description = "Manage your Papa's Pizzeria while he's away. Every day, serve orders. Make sure to get the toppings just right and the cutting on par with the order, or else you'll be left with a heart-wrenching tip!";
 $game = "Pacman";
 $long_desc = "None yet!\nHi!";
 $code = "<style>ruffle-player {width:100%;height:100%;}</style><script defer src=\"https://unpkg.com/@ruffle-rs/ruffle@0.1.0-nightly.2023.6.3/ruffle.js\"></script>
