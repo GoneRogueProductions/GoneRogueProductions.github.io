@@ -8,10 +8,10 @@ $ltf = "/game/learn-to-fly";
 // $mc2 = "https://eaglercraftx.uimaxbai.repl.co";
 $cdg = "/game/car-drawing";
 $tt = "/game/table-tanks";
-$dl1 = "https://gc.gonerogue.ml/cdn/html5/ducklife/";
+/*$dl1 = "https://gc.gonerogue.ml/cdn/html5/ducklife/";
 $dl2 = "https://gc.gonerogue.ml/cdn/html5/ducklife2/";
-$dl3 = "https://gc.gonerogue.ml/cdn/html5/ducklife3/";
-$dl4 = "/duck-life.html";
+$dl3 = "https://gc.gonerogue.ml/cdn/html5/ducklife3/";*/
+$dl4 = "/game/duck-life-4";
 $gm = "/game/gun-mayhem";
 $gm2 = "/game/gun-mayhem-2";
 $pp = "/game/papas-pizza";
@@ -125,8 +125,8 @@ $hw = "/game/happy-wheels";
                     </li> -->
                     <li><a href="<?php echo $cdg; ?>">Car Drawing Gаme</a></li>
                     <li><a href="<?php echo $tt; ?>">Table Tanks</a></li>
-                    <li><a href="<?php echo $dl1; ?>">Duck Life (v1)</a> <a href="<?php echo $dl2; ?>">(v2)</a> <a
-                            href="<?php echo $dl3; ?>">(v3)</a> <a href="<?php echo $dl4; ?>">(v4)</a>
+                    <li><a href="<?php echo $dl4; ?>">Duck Life (v4)</a> <!--<a href="<?php echo $dl2; ?>">(v2)</a> <a
+                            href="<?php echo $dl3; ?>">(v3)</a> <a href="<?php echo $dl4; ?>">(v4)</a>-->
                     </li>
                     <li><a href="<?php echo $gm; ?>">Gun Mayhem (v1)</a> <a href="<?php echo $gm2; ?>">(v2)</a></li>
                     <li><a href="<?php echo $pp; ?>">Papa's Pizzeria</a></li>
@@ -318,10 +318,10 @@ $hw = "/game/happy-wheels";
                     <tray class="tray">
                         <b>Duck Lifе</b>
                         <aside>
-                            <a href="<?php echo $dl1; ?>">Plаy (v1)</a>
-                            <a href="<?php echo $dl2; ?>">v2</a>
+                            <a href="<?php echo $dl4; ?>">Plаy (v4)</a>
+                            <!--<a href="<?php echo $dl2; ?>">v2</a>
                             <a href="<?php echo $dl3; ?>">v3</a>
-                            <a href="<?php echo $dl4; ?>">v4</a>
+                            <a href="<?php echo $dl4; ?>">v4</a>-->
                         </aside>
                     </tray>
 
