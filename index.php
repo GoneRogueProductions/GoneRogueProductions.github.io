@@ -139,6 +139,7 @@ $hw = "/game/happy-wheels";
                     <li><a href="<?php echo $ss; ?>">Soccer Skills (Euro Cup '21)</a></li>
                     <li><a href="<?php echo $co; ?>">Choppy Orc</a></li>
                     <li><a href="<?php echo $t048; ?>">2048</a></li>
+                    <li><a href="<?php echo $hw; ?>">Happy Wheels</a></li>
                 </ul>
             </div>
 
