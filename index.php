@@ -4,8 +4,8 @@ $run = "/game/run-3";
 $slope = "/game/slope";
 $gd = "/game/geometry-dash";
 $ltf = "/game/learn-to-fly";
-$mc1 = "/craft";
-$mc2 = "https://eaglercraftx.uimaxbai.repl.co";
+// $mc1 = "/craft";
+// $mc2 = "https://eaglercraftx.uimaxbai.repl.co";
 $cdg = "/game/car-drawing";
 $tt = "/game/table-tanks";
 $dl1 = "https://gc.gonerogue.ml/cdn/html5/ducklife/";
@@ -18,12 +18,13 @@ $pp = "/pizza.html";
 $bl = "https://bitlife.gonerogue.ml/";
 $pm = "/game/pacman";
 $fb = "https://gc.gonerogue.ml/cdn/html5/flappybird/";
-$cc = "https://gc.gonerogue.ml/cdn/html5/cookieclicker/";
+$cc = "/cookie-clicker/index";
 $es = "https://gc.gonerogue.ml/cdn/html5/edge-surf/";
 $x3m = "/game/motox3m2";
 $ss = "/game/soccer-skills";
 $co = "/game/choppy-orc";
 $t048 = "https://2048.gonerogue.ml/"; 
+$hw = "";
 
 ?>
 
@@ -120,8 +121,8 @@ $t048 = "https://2048.gonerogue.ml/";
                     <li><a href="<?php echo $slope; ?>">Slope</a></li>
                     <li><a href="<?php echo $gd; ?>">Geometry Dash</a></li>
                     <li><a href="<?php echo $ltf; ?>">Learn To Fly</a></li>
-                    <li><a href="<?php echo $mc1; ?>">Minecraft (1.5.2)</a> <a href="<?php echo $mc2; ?>">(1.8.8)</a>
-                    </li>
+                    <!-- <li><a href="<?php //echo $mc1; ?>">Minecraft (1.5.2)</a> <a href="<?php //echo $mc2; ?>">(1.8.8)</a>
+                    </li> -->
                     <li><a href="<?php echo $cdg; ?>">Car Drawing Gаme</a></li>
                     <li><a href="<?php echo $tt; ?>">Table Tanks</a></li>
                     <li><a href="<?php echo $dl1; ?>">Duck Life (v1)</a> <a href="<?php echo $dl2; ?>">(v2)</a> <a
@@ -225,14 +226,14 @@ $t048 = "https://2048.gonerogue.ml/";
                 </section>
             </div>
 
-            <div>
+            <!-- <div>
                 <img data-src="https://ik.imagekit.io/gonerogue/images/minecraft.png" class="lazyload" alt="A build in Minecraft">
                 <section>
                     <tray class="tray">
                         <b>Minecrаft</b>
                         <aside>
-                            <a href="<?php echo $mc1; ?>">Plаy (1.5.2)</a>
-                            <a href="<?php echo $mc2; ?>">Plаy (1.8.8)</a>
+                            <a href="<?php //echo $mc1; ?>">Plаy (1.5.2)</a>
+                            <a href="<?php //echo $mc2; ?>">Plаy (1.8.8)</a>
                         </aside>
                     </tray>
 
@@ -254,7 +255,7 @@ $t048 = "https://2048.gonerogue.ml/";
                         eаrthworks, and simple machines.
                     </span>
                 </section>
-            </div>
+            </div> -->
 
             <div>
                 <img data-src="https://ik.imagekit.io/gonerogue/images/2048.jpg" class="lazyload" alt="2048 in action">
@@ -502,6 +503,23 @@ $t048 = "https://2048.gonerogue.ml/";
                     <span>
                         Grab your magic axe and free the captives in Choppy Orc. Dodge traps and defeat the enemies
                         lurking in the caves to make it to the end of the game.
+                    </span>
+                </section>
+            </div>
+
+            <div>
+                <img data-src="https://ik.imagekit.io/gonerogue/images/happy-wheels.jpg"
+                    class="lazyload" alt="Logo of Happy Wheels">
+                <section>
+                    <tray class="tray">
+                        <b>Happy Wheels</b>
+                        <aside>
+                            <a href="<?php echo $hw; ?>">Plаy</a>
+                        </aside>
+                    </tray>
+
+                    <span>
+                        A very happy game with very nice graphics. A very nice experience. Very family friendly. 😉
                     </span>
                 </section>
             </div>
