@@ -11,6 +11,8 @@ echo '
 <html lang="en">
 
 <head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4739296020319725"
+        crossorigin="anonymous"></script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4WR46690Y7"></script>
 <script>
@@ -24,8 +26,7 @@ echo '
 
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="white">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4739296020319725"
-        crossorigin="anonymous"></script>
+    
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 

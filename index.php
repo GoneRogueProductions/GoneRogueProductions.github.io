@@ -32,6 +32,8 @@ $hw = "/game/happy-wheels";
 <html lang="en">
 
 <head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4739296020319725"
+        crossorigin="anonymous"></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4WR46690Y7"></script>
     <script>
@@ -562,8 +564,7 @@ $hw = "/game/happy-wheels";
     <!-- Footer -->
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script defer src="./main.min.js"></script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4739296020319725"
-        crossorigin="anonymous"></script>
+    
         <script src="/lazysizes.min.js" async></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
     <script defer src="./fontawesome.js" crossorigin="anonymous"></script>
