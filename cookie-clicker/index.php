@@ -7,7 +7,8 @@
 
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
 
-<title>Cookie Clicker</title>
+<title>GoneRogue: Cookie Clicker</title>
+<meta name="robots" content="noindex, nofollow">
 <!--
 Code and graphics copyright Orteil, 2013-2020
 Feel free to alter this code to your liking, but do not present it as your own.
@@ -68,7 +69,7 @@ Feel free to alter this code to your liking, but do not present it as your own.
 			Other versions
 			<div class="hoverable">
 			<a href="../" target="_blank" id="linkVersionLive">Live version</a>
-			<a href="beta" target="_blank" id="linkVersionBeta">Try the beta!</a>
+			
 			<a href="//orteil.dashnet.org/cookieclicker/v10466" target="_blank" id="linkVersionOld">v. 1.0466</a>
 			<a href="//orteil.dashnet.org/experiments/cookie/" target="_blank">Classic</a>
 			</div>
