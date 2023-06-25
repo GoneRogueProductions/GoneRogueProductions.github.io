@@ -5,8 +5,11 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
     let theme = false;
 }
 $(document).keypress(function(e) {
+    console.log("key");
     if (e.which == 191) {
+        console.log("/");
         if (context == false) {
+            console.log("focus");
             $("#searchBox").focus();
             showContext();
         }

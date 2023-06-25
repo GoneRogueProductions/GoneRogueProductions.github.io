@@ -115,7 +115,7 @@ $hw = "/game/happy-wheels";
             <div class="search-container">
                 <div class="search" id="search">
                     <i class="fa-solid fa-magnifying-glass search-icon"></i>
-                    <input onkeyup="myFunction()" class="search-input" onclick="showContext()" type="text"
+                    <input onkeyup="myFunction()" class="search-input" onclick="showContext()" onblur="showContext()" type="text"
                         id="searchBox" placeholder="Search...">
                 </div>
                 <ul id="gamesList">
