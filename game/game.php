@@ -4,6 +4,7 @@ if ($code == "" || $title == "") {
     header("Location: /");
 }
 $link = htmlspecialchars(preg_replace('/^(http(s)?)?:?\/*/u','',trim(strtok($_SERVER["REQUEST_URI"], '?'))), 11,'UTF-8',true);
+$long_desc = str_replace( "\n", '<br>', $long_desc );
 
 echo '
 <!DOCTYPE html>
@@ -254,7 +255,7 @@ echo '
         </div>
         <div class="description">
             <h5>DESCRIPTION</h5>
-            <p>'.nl2br($long_desc).'</p>
+            <p>'.$long_desc.'</p>
         </div>
     </div>
 
