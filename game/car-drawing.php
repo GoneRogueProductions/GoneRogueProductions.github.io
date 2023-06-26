@@ -1,4 +1,6 @@
 <?php
+session_start();
+$_SESSION['game'] = ["Car Drawing Game","/game/car-drawing"];
 
 $title = "Play Car Drawing Game on GoneRogue";
 $description = "Use your artistic skills to dominate in Car Drawing Game. Try to reach the diamond and then get a gigantic speed boost.";

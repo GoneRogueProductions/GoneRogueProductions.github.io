@@ -1,4 +1,6 @@
 <?php
+session_start();
+$_SESSION['game'] = ["Run 3","/game/run-3"];
 
 $title = "Play Run 3 on GoneRogue";
 $description = "Jump your way through falling tiles and obstacles all the way to the last level. Explore sub-tunnels and unlock new characters.";

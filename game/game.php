@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 if ($code == "" || $title == "") {
     header("Location: /");

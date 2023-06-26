@@ -1,4 +1,6 @@
 <?php
+session_start();
+$_SESSION['game'] = ["Soccer Skills","/game/soccer-skills"];
 
 $title = "Play Soccer Skills on GoneRogue";
 $description = "In Soccer Skills, tep into the shoes of a orc warrior in this thrilling adventure. Use your axe to get through to the final level.";

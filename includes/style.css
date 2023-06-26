@@ -229,3 +229,37 @@ svg {
 span,p,aside,h2,h1,h3{
     transition: 0s;
 }
+.continue-playing {
+    border-radius: 25px;
+    cursor: url(https://cdn.custom-cursor.com/db/4827/32/arrow2747.png), pointer !important;
+    text-align: left;
+    background: rgb(245,245,245);
+    padding: 20px 25px;
+    margin-bottom: 1.5em;
+    margin-top: -1.5em;
+    position: relative;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.continue-playing::before {
+    border-left: 8px solid lightgray;
+    height: 100%;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.2s;
+}
+.continue-playing p b, .continue-playing h4 {
+    transition: 0.0s;
+}
+.continue-playing p {
+    margin-bottom: 0;
+}
+.continue-playing:hover {
+    background: #0390fc;
+    color: white;
+}
+.continue-playing:hover::before {
+    border-left: 8px solid #0062ad;
+}

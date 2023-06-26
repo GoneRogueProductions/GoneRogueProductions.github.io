@@ -1,4 +1,6 @@
 <?php
+session_start();
+$_SESSION['game'] = ["Pacman","/game/pacman"];
 
 $title = "Play Pacman on GoneRogue";
 $description = "Relive the arcade nostalgia with Pacman. Navigate the maze, eat pellets, and evade ghosts in the ultimate quest for high scores. Join Pacman and gobble up the fun!";

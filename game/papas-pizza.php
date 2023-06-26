@@ -1,8 +1,10 @@
 <?php
+session_start();
+$_SESSION['game'] = ["Papa's Pizzeria","/game/papas-pizza"];
 
 $title = "Play Papa's Pizzeria on GoneRogue";
 $description = "Manage your Papa's Pizzeria while he's away. Every day, serve orders. Make sure to get the toppings just right and the cutting on par with the order, or else you'll be left with a heart-wrenching tip!";
-$game = "Pacman";
+$game = "Papa's Pizzeria";
 $long_desc = "Papa's Pizzeria is a popular and addictive online cooking game that puts you in the role of a pizzeria chef. Developed by Flipline Studios, Papa's Pizzeria offers a delightful gaming experience where you get to create delicious pizzas, serve customers, and manage your own virtual restaurant.
 
 In Papa's Pizzeria, you step into the shoes of a chef working at Papa Louie's renowned pizzeria. Your goal is to satisfy customers by taking their orders, preparing customized pizzas with a wide range of toppings, baking them to perfection, and serving them promptly. The game focuses on time management, accuracy, and customer satisfaction, challenging you to deliver the best pizzas possible while handling multiple orders simultaneously.

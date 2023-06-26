@@ -1,4 +1,6 @@
 <?php
+session_start();
+$_SESSION['game'] = ["Geometry Dash","/game/geometry-dash"];
 
 $title = "Play Geometry Dash on GoneRogue";
 $description = "Prepare for a rhythmic challenge in Geometry Dash. Jump, flip, and fly through geometric obstacles.";

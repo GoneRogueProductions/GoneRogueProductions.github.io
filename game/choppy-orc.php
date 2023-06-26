@@ -1,4 +1,6 @@
 <?php
+session_start();
+$_SESSION['game'] = ["Choppy Orc","/game/choppy-orc"];
 
 $title = "Play Choppy Orc on GoneRogue";
 $description = "In Choppy Orc, tep into the shoes of a orc warrior in this thrilling adventure. Use your axe to get through to the final level.";

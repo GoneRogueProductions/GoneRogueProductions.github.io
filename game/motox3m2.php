@@ -1,4 +1,6 @@
 <?php
+session_start();
+$_SESSION['game'] = ["MotoX3M2","/game/motox3m2"];
 
 $title = "Play MotoX3M2 on GoneRogue";
 $description = "Ride your imaginary motorbike and show off your stunts in MotoX3M2. With lots of unique obstacles and thrilling peaks, dominate, but watch out for the traps!";

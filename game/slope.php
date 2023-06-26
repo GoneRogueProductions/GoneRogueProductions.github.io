@@ -1,4 +1,6 @@
 <?php
+session_start();
+$_SESSION['game'] = ["Slope","/game/slope"];
 
 $title = "Play Slope on GoneRogue";
 $description = "Slope. Defy gravity and master the treacherous slopes in this thrilling game of skill. Keep your ball rolling and survive the twists and obstacles.";

@@ -1,4 +1,6 @@
 <?php
+session_start();
+$_SESSION['game'] = ["Happy Wheels","/game/happy-wheels"];
 
 $title = "Play Happy Wheels on GoneRogue";
 $description = "A very happy driving game with very realistic graphics. Best for family-friendly activites. Very happy!";

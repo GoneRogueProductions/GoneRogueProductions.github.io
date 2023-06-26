@@ -1,4 +1,6 @@
 <?php
+session_start();
+$_SESSION['game'] = ["Learn To Fly","/game/learn-to-fly"];
 
 $title = "Play Learn To Fly on GoneRogue";
 $description = "You are a penguin who wants to take to the skies and fulfill your dream of flight in Learn To Fly. Upgrade your equipment, perfect your techniques, and soar to new heights in this addictive game.";

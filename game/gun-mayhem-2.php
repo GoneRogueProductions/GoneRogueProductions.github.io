@@ -1,4 +1,6 @@
 <?php
+session_start();
+$_SESSION['game'] = ["Gun Mayhem 2","/game/gun-mayhem-2"];
 
 $title = "Play Gun Mayhem 2 on GoneRogue";
 $description = "Unleash explosive mayhem in Gun Mayhem 2, the action-packed sequel. Arm yourself with even more weapons, navigate dynamic maps, and dominate opponents in intense multiplayer battles.";

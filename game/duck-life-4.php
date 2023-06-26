@@ -1,4 +1,6 @@
 <?php
+session_start();
+$_SESSION['game'] = ["Duck Life 4","/game/duck-life-4"];
 
 $title = "Play Duck Life 4 on GoneRogue";
 $description = "Hatch your very own duck and tain it to be MASTER DUCK in Duck Life 4! Do training and race against other ducks to prepare yourself for the competition.";

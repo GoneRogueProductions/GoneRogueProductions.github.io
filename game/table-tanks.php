@@ -1,4 +1,6 @@
 <?php
+session_start();
+$_SESSION['game'] = ["Table Tanks","/game/table-tanks"];
 
 $title = "Play Table Tanks on GoneRogue";
 $description = "Shoot all the enemy tanks in Table Tanks, but there is s twist. It's all on a 2D table with walls and only 3 pieces of ammo. Pick up boxes to restore it, but risk your life.";
