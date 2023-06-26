@@ -215,6 +215,12 @@ body,div,h1,h2,h3,h4,h5,h6,a,p,b,em {
     div.b-light {
         display: flex;
    }
+   div.continue-playing {
+    background: #444;
+   }
+   div.continue-playing::before {
+    border-left: 8px solid #555;
+   }
 }
 .b-dark, .b-light {
     justify-content: center;
@@ -262,4 +268,7 @@ span,p,aside,h2,h1,h3{
 }
 .continue-playing:hover::before {
     border-left: 8px solid #0062ad;
+}
+b, h1, h2, h3, h4, h5, h6 {
+    transition: 0s;
 }

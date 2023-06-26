@@ -33,6 +33,8 @@ function switchTheme() {
         document.getElementById("search").style.color = "rgb(235, 236, 240)";
         document.getElementById("footer").style.backgroundColor = "rgb(59, 66, 79)!important";
         document.getElementById("footer").style.color = "rgb(235, 236, 240)!important";
+        document.querySelector(".continue-playing").style.background = "#444";
+
         $('#catalog').children('div').each(function() {
             this.style.background = "rgb(35,39,47)";
         });
@@ -49,6 +51,7 @@ function switchTheme() {
         document.getElementById("search").style.color = "black";
         document.getElementById("footer").style.background = "white";
         document.getElementById("footer").style.color = "black";
+        document.querySelector(".continue-playing").style.background = "rgb(245,245,245)";
         $('#catalog').children('div').each(function() {
             this.style.background = "white";
         });
