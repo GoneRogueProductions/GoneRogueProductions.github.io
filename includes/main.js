@@ -20,9 +20,7 @@ $(document).keypress(function(e) {
     }
 });
 
-function switchTheme() {
-    if (theme === true) {
-        document.getElementById("b-dark").style.display = "none";
+document.getElementById("b-dark").style.display = "none";
         document.getElementById("b-light").style.display = "flex";
         document.getElementById("darkTog").style.background = "rgb(35,39,47)";
         document.getElementById("darkTog").style.color = "rgb(235, 236, 240)";
@@ -34,32 +32,6 @@ function switchTheme() {
         document.getElementById("footer").style.backgroundColor = "rgb(59, 66, 79)!important";
         document.getElementById("footer").style.color = "rgb(235, 236, 240)!important";
         document.querySelector(".continue-playing").style.background = "#444";
-
-        $('#catalog').children('div').each(function() {
-            this.style.background = "rgb(35,39,47)";
-        });
-        theme = false;
-    } else if (theme === false) {
-        document.getElementById("b-light").style.display = "none";
-        document.getElementById("b-dark").style.display = "flex";
-        document.getElementById("darkTog").style.background = "white";
-        document.getElementById("darkTog").style.color = "black";
-        document.getElementById("darkTog1").style.background = "white";
-        document.getElementById("darkTog1").style.color = "black";
-        document.getElementById("search").style.background = "rgb(238, 238, 238)";
-        document.getElementById("search").style.border = "0";
-        document.getElementById("search").style.color = "black";
-        document.getElementById("footer").style.background = "white";
-        document.getElementById("footer").style.color = "black";
-        document.querySelector(".continue-playing").style.background = "rgb(245,245,245)";
-        $('#catalog').children('div').each(function() {
-            this.style.background = "white";
-        });
-        theme = true;
-    }
-
-
-}
 
 function myFunction() {
     var input, filter, ul, li, a, i, txtValue;

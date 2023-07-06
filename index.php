@@ -109,12 +109,7 @@ $hw = "/game/happy-wheels";
                 src="/apple-touch-icon.png" style="border-radius: 10px; height: 50px;"
                 alt="GoneRogue Favicon"> Gаmes</h2>
         <div class="right-cont">
-            <div class="b-dark" id="b-dark" onclick="switchTheme();">
-                <i class="fa-solid fa-moon"></i>
-            </div>
-            <div class="b-light" id="b-light" onclick="switchTheme();">
-                <i class="fa-solid fa-sun-bright"></i>
-            </div>
+            
             <div class="search-container">
                 <div class="search" id="search">
                     <i class="fa-solid fa-magnifying-glass search-icon"></i>

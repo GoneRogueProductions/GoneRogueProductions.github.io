@@ -163,7 +163,6 @@ body,div,h1,h2,h3,h4,h5,h6,a,p,b,em {
 #gamesList li {
     margin-bottom: 10px;
 }
-@media (prefers-color-scheme: dark) {
     body {
         background: rgb(35,39,47);
         color: rgb(235, 236, 240);
@@ -185,7 +184,6 @@ body,div,h1,h2,h3,h4,h5,h6,a,p,b,em {
    #gamesList li a {
        color: white;
    }
-}
 .search {
     background: rgb(238, 238, 238);
     display: flex;

@@ -101,12 +101,6 @@ echo '
         <h2 onclick="window.location.href=\'/\'" style="cursor: url(https://cdn.custom-cursor.com/db/4827/32/arrow2747.png)   , pointer !important; font-size: 2em;"><img src="/apple-touch-icon.png" style="border-radius: 10px; height: 75px;"
                 alt="GoneRogue Favicon"> Gаmes</h2>
         <div class="right-cont">
-            <div class="b-dark" id="b-dark" onclick="switchTheme();">
-                <i class="fa-solid fa-moon"></i>
-            </div>
-            <div class="b-light" id="b-light" onclick="switchTheme();">
-                <i class="fa-solid fa-sun-bright"></i>
-            </div>
             <div class="search-container">
                 <div class="search" id="search">
                     <i class="fa-solid fa-magnifying-glass search-icon"></i>
