@@ -4,10 +4,10 @@
     --tw-shadow: inset 0 1px 4px 0 rgba(0,0,0,.05);
 }
 html {
-    cursor: url(https://cdn.custom-cursor.com/db/4828/32/arrow2747.png), default;
+/*    cursor: url(https://cdn.custom-cursor.com/db/4828/32/arrow2747.png), default; */
 }
 button, a {
-    cursor: url(https://cdn.custom-cursor.com/db/4827/32/arrow2747.png)   , pointer !important;
+/*    cursor: url(https://cdn.custom-cursor.com/db/4827/32/arrow2747.png)   , pointer !important; */
 }
 @font-face {
     font-family: Optimistic;
@@ -224,7 +224,7 @@ body,div,h1,h2,h3,h4,h5,h6,a,p,b,em {
     justify-content: center;
     align-items: center;
     font-size: 2em;
-    cursor: url(https://cdn.custom-cursor.com/db/4827/32/arrow2747.png)   , pointer !important;
+#    cursor: url(https://cdn.custom-cursor.com/db/4827/32/arrow2747.png)   , pointer !important;
     transition: 0s;
 }
 svg {

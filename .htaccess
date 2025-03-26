@@ -6,8 +6,8 @@ RewriteRule ^([^\.]+)$ $1.php [NC,L]
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
 <FilesMatch "\.avif$">
-    Header set Content-Type "image/avif"
+#    Header set Content-Type "image/avif"
 </FilesMatch>
 <FilesMatch "\.webp$">
-    Header set Content-Type "image/webp"
+#    Header set Content-Type "image/webp"
 </FilesMatch>

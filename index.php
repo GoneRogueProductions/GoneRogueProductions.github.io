@@ -99,7 +99,7 @@ $hw = "/game/happy-wheels";
     <link rel="preload" fetchpriority="high" as="image" href="https://ik.imagekit.io/gonerogue/images/slope.png" type="image/webp">
     <link rel="preload" fetchpriority="high" as="image" href="https://ik.imagekit.io/gonerogue/images/gd.jpg" type="image/webp">
     <link rel="preload" fetchpriority="high" as="image" href="/apple-touch-icon.png" type="image/png">
-    <style><?php echo file_get_contents("style.min.css"); ?></style>
+    <link rel="stylesheet" href="style.css?v=2">
 </head>
 
 <body id="darkTog">
