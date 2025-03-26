@@ -224,7 +224,7 @@ body,div,h1,h2,h3,h4,h5,h6,a,p,b,em {
     justify-content: center;
     align-items: center;
     font-size: 2em;
-#    cursor: url(https://cdn.custom-cursor.com/db/4827/32/arrow2747.png)   , pointer !important;
+/*    cursor: url(https://cdn.custom-cursor.com/db/4827/32/arrow2747.png)   , pointer !important; */
     transition: 0s;
 }
 svg {
@@ -235,7 +235,7 @@ span,p,aside,h2,h1,h3{
 }
 .continue-playing {
     border-radius: 25px;
-    cursor: url(https://cdn.custom-cursor.com/db/4827/32/arrow2747.png), pointer !important;
+/*    cursor: url(https://cdn.custom-cursor.com/db/4827/32/arrow2747.png), pointer !important; */
     text-align: left;
     background: rgb(245,245,245);
     padding: 20px 25px;
